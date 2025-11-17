@@ -1,0 +1,30 @@
+# Snake AI Game Configuration File
+
+# Grid settings
+grid:
+  rows: 20
+  cols: 20
+  cell_size: 30
+
+# Game settings
+game:
+  default_fps: 10
+  min_fps: 5
+  max_fps: 30
+
+# AI settings
+ai:
+  algorithm: "astar"  # "bfs" or "astar"
+  heuristic: "manhattan"  # "manhattan" or "euclidean"
+  show_visualization: true
+  dynamic_replanning: true
+
+# Visual settings
+visual:
+  default_theme: "dark"  # "dark" or "light"
+  show_grid: true
+
+# Logging
+logging:
+  enabled: true
+  log_dir: "logs"
