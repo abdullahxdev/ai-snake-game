@@ -105,7 +105,7 @@ class GameController:
                 elif event.key == pygame.K_MINUS:
                     self.adjust_speed(-1)
                 
-                # Human player controls
+                # The controls for the human player
                 elif self.mode == 'human' and not self.paused:
                     if event.key == pygame.K_UP:
                         self.game.change_direction(UP)
