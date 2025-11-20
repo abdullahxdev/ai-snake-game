@@ -1,0 +1,1479 @@
+2025-11-17 20:07:38,632 - INFO - Starting new AI run: unnamed
+2025-11-17 20:07:38,632 - INFO - Game started
+2025-11-17 20:07:41,750 - INFO - AI mode activated: astar, manhattan
+2025-11-17 20:07:41,751 - INFO - Mode switched to: ai
+2025-11-17 20:07:41,753 - INFO - ASTAR found path: length=10, nodes_expanded=30
+2025-11-17 20:07:41,849 - INFO - ASTAR found path: length=9, nodes_expanded=25
+2025-11-17 20:07:41,950 - INFO - ASTAR found path: length=8, nodes_expanded=20
+2025-11-17 20:07:42,050 - INFO - ASTAR found path: length=7, nodes_expanded=15
+2025-11-17 20:07:42,153 - INFO - ASTAR found path: length=6, nodes_expanded=10
+2025-11-17 20:07:42,253 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:07:42,354 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:42,454 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:42,554 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:42,654 - INFO - ASTAR found path: length=14, nodes_expanded=25
+2025-11-17 20:07:42,755 - INFO - ASTAR found path: length=13, nodes_expanded=24
+2025-11-17 20:07:42,856 - INFO - ASTAR found path: length=12, nodes_expanded=12
+2025-11-17 20:07:42,956 - INFO - ASTAR found path: length=11, nodes_expanded=11
+2025-11-17 20:07:43,058 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:07:43,160 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:07:43,263 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:07:43,364 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:07:43,464 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:07:43,564 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:07:43,664 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:43,764 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:43,864 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:43,964 - INFO - ASTAR found path: length=14, nodes_expanded=25
+2025-11-17 20:07:44,066 - INFO - ASTAR found path: length=13, nodes_expanded=24
+2025-11-17 20:07:44,166 - INFO - ASTAR found path: length=12, nodes_expanded=12
+2025-11-17 20:07:44,267 - INFO - ASTAR found path: length=11, nodes_expanded=11
+2025-11-17 20:07:44,368 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:07:44,468 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:07:44,569 - INFO - Speed adjusted to: 11 FPS
+2025-11-17 20:07:44,571 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:07:44,658 - INFO - Speed adjusted to: 12 FPS
+2025-11-17 20:07:44,660 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:07:44,743 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:07:44,827 - INFO - Speed adjusted to: 13 FPS
+2025-11-17 20:07:44,828 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:07:44,903 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:44,980 - INFO - Speed adjusted to: 14 FPS
+2025-11-17 20:07:44,980 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:45,051 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:45,122 - INFO - ASTAR found path: length=17, nodes_expanded=31
+2025-11-17 20:07:45,194 - INFO - ASTAR found path: length=16, nodes_expanded=30
+2025-11-17 20:07:45,266 - INFO - ASTAR found path: length=15, nodes_expanded=15
+2025-11-17 20:07:45,338 - INFO - Speed adjusted to: 15 FPS
+2025-11-17 20:07:45,340 - INFO - ASTAR found path: length=14, nodes_expanded=14
+2025-11-17 20:07:45,404 - INFO - ASTAR found path: length=13, nodes_expanded=13
+2025-11-17 20:07:45,472 - INFO - Speed adjusted to: 16 FPS
+2025-11-17 20:07:45,474 - INFO - ASTAR found path: length=12, nodes_expanded=12
+2025-11-17 20:07:45,534 - INFO - ASTAR found path: length=11, nodes_expanded=11
+2025-11-17 20:07:45,597 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:07:45,660 - INFO - Speed adjusted to: 17 FPS
+2025-11-17 20:07:45,663 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:07:45,718 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:07:45,777 - INFO - Speed adjusted to: 18 FPS
+2025-11-17 20:07:45,778 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:07:45,833 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:07:45,888 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:07:45,944 - INFO - Speed adjusted to: 19 FPS
+2025-11-17 20:07:45,946 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:45,995 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:46,048 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:46,101 - INFO - ASTAR found path: length=8, nodes_expanded=17
+2025-11-17 20:07:46,153 - INFO - ASTAR found path: length=7, nodes_expanded=16
+2025-11-17 20:07:46,205 - INFO - Speed adjusted to: 18 FPS
+2025-11-17 20:07:46,206 - INFO - ASTAR found path: length=6, nodes_expanded=12
+2025-11-17 20:07:46,261 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:07:46,317 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:46,373 - INFO - Speed adjusted to: 17 FPS
+2025-11-17 20:07:46,375 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:46,432 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:46,491 - INFO - Speed adjusted to: 16 FPS
+2025-11-17 20:07:46,494 - INFO - ASTAR found path: length=5, nodes_expanded=7
+2025-11-17 20:07:46,552 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:07:46,613 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:46,677 - INFO - Speed adjusted to: 15 FPS
+2025-11-17 20:07:46,679 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:46,743 - INFO - ASTAR found path: length=15, nodes_expanded=45
+2025-11-17 20:07:46,810 - INFO - Speed adjusted to: 14 FPS
+2025-11-17 20:07:46,811 - INFO - ASTAR found path: length=14, nodes_expanded=44
+2025-11-17 20:07:46,882 - INFO - ASTAR found path: length=13, nodes_expanded=33
+2025-11-17 20:07:46,954 - INFO - ASTAR found path: length=12, nodes_expanded=22
+2025-11-17 20:07:47,026 - INFO - Speed adjusted to: 13 FPS
+2025-11-17 20:07:47,028 - INFO - ASTAR found path: length=11, nodes_expanded=11
+2025-11-17 20:07:47,103 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:07:47,179 - INFO - Speed adjusted to: 12 FPS
+2025-11-17 20:07:47,182 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:07:47,263 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:07:47,346 - INFO - Speed adjusted to: 11 FPS
+2025-11-17 20:07:47,347 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:07:47,436 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:07:47,527 - INFO - Speed adjusted to: 10 FPS
+2025-11-17 20:07:47,528 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:07:47,627 - INFO - Speed adjusted to: 9 FPS
+2025-11-17 20:07:47,628 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:47,739 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:47,851 - INFO - Speed adjusted to: 8 FPS
+2025-11-17 20:07:47,853 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:47,976 - INFO - Speed adjusted to: 7 FPS
+2025-11-17 20:07:47,979 - INFO - ASTAR found path: length=12, nodes_expanded=36
+2025-11-17 20:07:48,120 - INFO - Speed adjusted to: 6 FPS
+2025-11-17 20:07:48,123 - INFO - ASTAR found path: length=11, nodes_expanded=35
+2025-11-17 20:07:48,288 - INFO - Speed adjusted to: 5 FPS
+2025-11-17 20:07:48,290 - INFO - ASTAR found path: length=10, nodes_expanded=28
+2025-11-17 20:07:48,487 - INFO - Speed adjusted to: 5 FPS
+2025-11-17 20:07:48,490 - INFO - ASTAR found path: length=9, nodes_expanded=21
+2025-11-17 20:07:48,687 - INFO - Speed adjusted to: 5 FPS
+2025-11-17 20:07:48,688 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:07:48,890 - INFO - Speed adjusted to: 5 FPS
+2025-11-17 20:07:48,893 - INFO - Speed adjusted to: 5 FPS
+2025-11-17 20:07:48,894 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:07:49,089 - INFO - Speed adjusted to: 5 FPS
+2025-11-17 20:07:49,090 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:07:49,291 - INFO - Speed adjusted to: 5 FPS
+2025-11-17 20:07:49,293 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:07:49,492 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:49,692 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:49,892 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:50,094 - INFO - ASTAR found path: length=12, nodes_expanded=33
+2025-11-17 20:07:50,295 - INFO - ASTAR found path: length=11, nodes_expanded=32
+2025-11-17 20:07:50,495 - INFO - ASTAR found path: length=10, nodes_expanded=28
+2025-11-17 20:07:50,697 - INFO - ASTAR found path: length=9, nodes_expanded=24
+2025-11-17 20:07:50,897 - INFO - ASTAR found path: length=8, nodes_expanded=20
+2025-11-17 20:07:51,097 - INFO - ASTAR found path: length=7, nodes_expanded=16
+2025-11-17 20:07:51,299 - INFO - ASTAR found path: length=6, nodes_expanded=12
+2025-11-17 20:07:52,074 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:07:52,274 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:52,475 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:52,677 - INFO - Speed adjusted to: 6 FPS
+2025-11-17 20:07:52,679 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:52,844 - INFO - ASTAR found path: length=14, nodes_expanded=14
+2025-11-17 20:07:53,022 - INFO - Speed adjusted to: 7 FPS
+2025-11-17 20:07:53,023 - INFO - Speed adjusted to: 8 FPS
+2025-11-17 20:07:53,025 - INFO - ASTAR found path: length=13, nodes_expanded=13
+2025-11-17 20:07:53,135 - INFO - ASTAR found path: length=12, nodes_expanded=12
+2025-11-17 20:07:53,260 - INFO - Speed adjusted to: 9 FPS
+2025-11-17 20:07:53,261 - INFO - ASTAR found path: length=11, nodes_expanded=11
+2025-11-17 20:07:53,371 - INFO - Speed adjusted to: 10 FPS
+2025-11-17 20:07:53,371 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:07:53,472 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:07:53,574 - INFO - Speed adjusted to: 11 FPS
+2025-11-17 20:07:53,576 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:07:53,665 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:07:53,755 - INFO - Speed adjusted to: 12 FPS
+2025-11-17 20:07:53,757 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:07:53,837 - INFO - Speed adjusted to: 13 FPS
+2025-11-17 20:07:53,838 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:07:53,914 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:53,989 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:54,067 - INFO - Speed adjusted to: 14 FPS
+2025-11-17 20:07:54,069 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:54,138 - INFO - ASTAR found path: length=6, nodes_expanded=10
+2025-11-17 20:07:54,215 - INFO - Speed adjusted to: 15 FPS
+2025-11-17 20:07:54,217 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:07:54,276 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:07:54,343 - INFO - Speed adjusted to: 16 FPS
+2025-11-17 20:07:54,345 - INFO - ASTAR found path: length=3, nodes_expanded=4
+2025-11-17 20:07:54,405 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:54,466 - INFO - ASTAR found path: length=13, nodes_expanded=19
+2025-11-17 20:07:54,529 - INFO - Speed adjusted to: 17 FPS
+2025-11-17 20:07:54,530 - INFO - ASTAR found path: length=12, nodes_expanded=18
+2025-11-17 20:07:54,588 - INFO - ASTAR found path: length=11, nodes_expanded=17
+2025-11-17 20:07:54,647 - INFO - Speed adjusted to: 18 FPS
+2025-11-17 20:07:54,648 - INFO - ASTAR found path: length=10, nodes_expanded=16
+2025-11-17 20:07:54,702 - INFO - ASTAR found path: length=9, nodes_expanded=15
+2025-11-17 20:07:54,759 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:07:54,815 - INFO - Speed adjusted to: 19 FPS
+2025-11-17 20:07:54,817 - INFO - ASTAR found path: length=7, nodes_expanded=12
+2025-11-17 20:07:54,867 - INFO - ASTAR found path: length=6, nodes_expanded=10
+2025-11-17 20:07:54,921 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:07:54,974 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:07:55,026 - INFO - Speed adjusted to: 20 FPS
+2025-11-17 20:07:55,027 - INFO - ASTAR found path: length=3, nodes_expanded=4
+2025-11-17 20:07:55,077 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:55,128 - INFO - ASTAR found path: length=20, nodes_expanded=98
+2025-11-17 20:07:55,179 - INFO - Speed adjusted to: 21 FPS
+2025-11-17 20:07:55,182 - INFO - ASTAR found path: length=19, nodes_expanded=91
+2025-11-17 20:07:55,229 - INFO - ASTAR found path: length=18, nodes_expanded=84
+2025-11-17 20:07:55,274 - INFO - ASTAR found path: length=17, nodes_expanded=77
+2025-11-17 20:07:55,323 - INFO - ASTAR found path: length=16, nodes_expanded=70
+2025-11-17 20:07:55,369 - INFO - Speed adjusted to: 22 FPS
+2025-11-17 20:07:55,370 - INFO - ASTAR found path: length=15, nodes_expanded=63
+2025-11-17 20:07:55,414 - INFO - ASTAR found path: length=14, nodes_expanded=56
+2025-11-17 20:07:55,460 - INFO - ASTAR found path: length=13, nodes_expanded=49
+2025-11-17 20:07:55,505 - INFO - Speed adjusted to: 23 FPS
+2025-11-17 20:07:55,506 - INFO - ASTAR found path: length=12, nodes_expanded=42
+2025-11-17 20:07:55,549 - INFO - ASTAR found path: length=11, nodes_expanded=35
+2025-11-17 20:07:55,592 - INFO - ASTAR found path: length=10, nodes_expanded=28
+2025-11-17 20:07:55,636 - INFO - ASTAR found path: length=9, nodes_expanded=21
+2025-11-17 20:07:55,680 - INFO - Speed adjusted to: 24 FPS
+2025-11-17 20:07:55,681 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:07:55,723 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:07:55,765 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:07:55,806 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:07:55,849 - INFO - Speed adjusted to: 25 FPS
+2025-11-17 20:07:55,850 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:55,888 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:55,931 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:55,971 - INFO - ASTAR found path: length=14, nodes_expanded=54
+2025-11-17 20:07:56,012 - INFO - Speed adjusted to: 26 FPS
+2025-11-17 20:07:56,013 - INFO - ASTAR found path: length=13, nodes_expanded=48
+2025-11-17 20:07:56,051 - INFO - ASTAR found path: length=12, nodes_expanded=42
+2025-11-17 20:07:56,089 - INFO - ASTAR found path: length=11, nodes_expanded=36
+2025-11-17 20:07:56,128 - INFO - ASTAR found path: length=10, nodes_expanded=30
+2025-11-17 20:07:56,165 - INFO - ASTAR found path: length=9, nodes_expanded=24
+2025-11-17 20:07:56,203 - INFO - Speed adjusted to: 27 FPS
+2025-11-17 20:07:56,204 - INFO - ASTAR found path: length=8, nodes_expanded=18
+2025-11-17 20:07:56,244 - INFO - ASTAR found path: length=7, nodes_expanded=12
+2025-11-17 20:07:56,279 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:07:56,317 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:07:56,355 - INFO - Speed adjusted to: 28 FPS
+2025-11-17 20:07:56,356 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:56,391 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:56,427 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:56,462 - INFO - ASTAR found path: length=12, nodes_expanded=33
+2025-11-17 20:07:56,498 - INFO - ASTAR found path: length=11, nodes_expanded=32
+2025-11-17 20:07:56,534 - INFO - Speed adjusted to: 29 FPS
+2025-11-17 20:07:56,536 - INFO - ASTAR found path: length=10, nodes_expanded=28
+2025-11-17 20:07:56,570 - INFO - ASTAR found path: length=9, nodes_expanded=24
+2025-11-17 20:07:56,605 - INFO - ASTAR found path: length=8, nodes_expanded=20
+2025-11-17 20:07:56,639 - INFO - ASTAR found path: length=7, nodes_expanded=16
+2025-11-17 20:07:56,674 - INFO - ASTAR found path: length=6, nodes_expanded=12
+2025-11-17 20:07:56,708 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:56,710 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:07:56,743 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:56,776 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:56,809 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:56,843 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:56,844 - INFO - ASTAR found path: length=17, nodes_expanded=71
+2025-11-17 20:07:56,876 - INFO - ASTAR found path: length=16, nodes_expanded=46
+2025-11-17 20:07:56,909 - INFO - ASTAR found path: length=15, nodes_expanded=45
+2025-11-17 20:07:56,943 - INFO - ASTAR found path: length=14, nodes_expanded=44
+2025-11-17 20:07:56,976 - INFO - ASTAR found path: length=13, nodes_expanded=43
+2025-11-17 20:07:57,009 - INFO - ASTAR found path: length=12, nodes_expanded=42
+2025-11-17 20:07:57,043 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:57,044 - INFO - ASTAR found path: length=11, nodes_expanded=36
+2025-11-17 20:07:57,077 - INFO - ASTAR found path: length=10, nodes_expanded=30
+2025-11-17 20:07:57,111 - INFO - ASTAR found path: length=9, nodes_expanded=24
+2025-11-17 20:07:57,144 - INFO - ASTAR found path: length=8, nodes_expanded=18
+2025-11-17 20:07:57,177 - INFO - ASTAR found path: length=7, nodes_expanded=12
+2025-11-17 20:07:57,211 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:57,212 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:07:57,244 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:07:57,278 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:57,312 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:57,344 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:57,378 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:57,379 - INFO - ASTAR found path: length=7, nodes_expanded=13
+2025-11-17 20:07:57,411 - INFO - ASTAR found path: length=6, nodes_expanded=12
+2025-11-17 20:07:57,443 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:07:57,478 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:57,511 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:57,545 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:57,547 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:57,578 - INFO - ASTAR found path: length=10, nodes_expanded=19
+2025-11-17 20:07:57,611 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:07:57,645 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:07:57,678 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:07:57,711 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:57,711 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:07:57,744 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:07:57,778 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:57,812 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:57,846 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:57,881 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:57,884 - INFO - ASTAR found path: length=16, nodes_expanded=29
+2025-11-17 20:07:57,914 - INFO - ASTAR found path: length=15, nodes_expanded=28
+2025-11-17 20:07:57,947 - INFO - ASTAR found path: length=14, nodes_expanded=14
+2025-11-17 20:07:57,981 - INFO - ASTAR found path: length=13, nodes_expanded=13
+2025-11-17 20:07:58,014 - INFO - ASTAR found path: length=12, nodes_expanded=12
+2025-11-17 20:07:58,046 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:58,047 - INFO - ASTAR found path: length=11, nodes_expanded=11
+2025-11-17 20:07:58,080 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:07:58,113 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:07:58,147 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:07:58,180 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:07:58,214 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:07:58,247 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:07:58,280 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:58,314 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:58,347 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:58,348 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:58,381 - INFO - ASTAR found path: length=20, nodes_expanded=92
+2025-11-17 20:07:58,415 - INFO - ASTAR found path: length=19, nodes_expanded=91
+2025-11-17 20:07:58,450 - INFO - ASTAR found path: length=18, nodes_expanded=78
+2025-11-17 20:07:58,482 - INFO - ASTAR found path: length=17, nodes_expanded=65
+2025-11-17 20:07:58,515 - INFO - ASTAR found path: length=16, nodes_expanded=52
+2025-11-17 20:07:58,549 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:58,550 - INFO - ASTAR found path: length=15, nodes_expanded=39
+2025-11-17 20:07:58,583 - INFO - ASTAR found path: length=14, nodes_expanded=26
+2025-11-17 20:07:58,616 - INFO - ASTAR found path: length=13, nodes_expanded=13
+2025-11-17 20:07:58,650 - INFO - ASTAR found path: length=12, nodes_expanded=12
+2025-11-17 20:07:58,684 - INFO - ASTAR found path: length=11, nodes_expanded=11
+2025-11-17 20:07:58,717 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:58,718 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:07:58,751 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:07:58,786 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:07:58,820 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:07:58,853 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:07:58,887 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:58,888 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:07:58,921 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:58,954 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:58,988 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:59,023 - INFO - ASTAR found path: length=18, nodes_expanded=57
+2025-11-17 20:07:59,054 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:59,056 - INFO - ASTAR found path: length=17, nodes_expanded=56
+2025-11-17 20:07:59,089 - INFO - ASTAR found path: length=16, nodes_expanded=52
+2025-11-17 20:07:59,123 - INFO - ASTAR found path: length=15, nodes_expanded=48
+2025-11-17 20:07:59,158 - INFO - ASTAR found path: length=14, nodes_expanded=44
+2025-11-17 20:07:59,190 - INFO - ASTAR found path: length=13, nodes_expanded=40
+2025-11-17 20:07:59,224 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:59,224 - INFO - ASTAR found path: length=12, nodes_expanded=36
+2025-11-17 20:07:59,257 - INFO - ASTAR found path: length=11, nodes_expanded=32
+2025-11-17 20:07:59,290 - INFO - ASTAR found path: length=10, nodes_expanded=28
+2025-11-17 20:07:59,323 - INFO - ASTAR found path: length=9, nodes_expanded=24
+2025-11-17 20:07:59,356 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:59,357 - INFO - ASTAR found path: length=8, nodes_expanded=20
+2025-11-17 20:07:59,389 - INFO - ASTAR found path: length=7, nodes_expanded=16
+2025-11-17 20:07:59,421 - INFO - ASTAR found path: length=6, nodes_expanded=12
+2025-11-17 20:07:59,454 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:07:59,489 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:07:59,522 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:59,556 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:59,558 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:59,588 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:07:59,622 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:07:59,656 - INFO - ASTAR found path: length=17, nodes_expanded=72
+2025-11-17 20:07:59,690 - INFO - ASTAR found path: length=16, nodes_expanded=60
+2025-11-17 20:07:59,722 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:59,724 - INFO - ASTAR found path: length=15, nodes_expanded=48
+2025-11-17 20:07:59,756 - INFO - ASTAR found path: length=14, nodes_expanded=36
+2025-11-17 20:07:59,790 - INFO - ASTAR found path: length=13, nodes_expanded=24
+2025-11-17 20:07:59,824 - INFO - ASTAR found path: length=12, nodes_expanded=12
+2025-11-17 20:07:59,857 - INFO - ASTAR found path: length=11, nodes_expanded=11
+2025-11-17 20:07:59,890 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:07:59,891 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:07:59,924 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:07:59,957 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:07:59,992 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:00,025 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:00,059 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:00,093 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:00,128 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:00,161 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:00,195 - INFO - ASTAR found path: length=16, nodes_expanded=61
+2025-11-17 20:08:00,228 - INFO - ASTAR found path: length=15, nodes_expanded=60
+2025-11-17 20:08:00,262 - INFO - ASTAR found path: length=14, nodes_expanded=50
+2025-11-17 20:08:00,296 - INFO - ASTAR found path: length=13, nodes_expanded=40
+2025-11-17 20:08:00,329 - INFO - ASTAR found path: length=12, nodes_expanded=30
+2025-11-17 20:08:00,362 - INFO - ASTAR found path: length=11, nodes_expanded=20
+2025-11-17 20:08:00,396 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:08:00,431 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:08:00,465 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:08:00,499 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:00,532 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:00,565 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:00,599 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:00,633 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:01,279 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:01,313 - INFO - ASTAR found path: length=17, nodes_expanded=48
+2025-11-17 20:08:01,346 - INFO - ASTAR found path: length=16, nodes_expanded=52
+2025-11-17 20:08:01,379 - INFO - ASTAR found path: length=15, nodes_expanded=48
+2025-11-17 20:08:01,413 - INFO - ASTAR found path: length=14, nodes_expanded=44
+2025-11-17 20:08:01,447 - INFO - ASTAR found path: length=13, nodes_expanded=40
+2025-11-17 20:08:01,482 - INFO - ASTAR found path: length=12, nodes_expanded=36
+2025-11-17 20:08:01,515 - INFO - ASTAR found path: length=11, nodes_expanded=32
+2025-11-17 20:08:01,550 - INFO - ASTAR found path: length=10, nodes_expanded=28
+2025-11-17 20:08:01,583 - INFO - ASTAR found path: length=9, nodes_expanded=24
+2025-11-17 20:08:01,617 - INFO - ASTAR found path: length=8, nodes_expanded=20
+2025-11-17 20:08:01,651 - INFO - ASTAR found path: length=7, nodes_expanded=16
+2025-11-17 20:08:01,686 - INFO - ASTAR found path: length=6, nodes_expanded=12
+2025-11-17 20:08:01,719 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:01,753 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:01,787 - INFO - Speed adjusted to: 30 FPS
+2025-11-17 20:08:01,787 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:01,821 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:01,855 - INFO - ASTAR found path: length=24, nodes_expanded=144
+2025-11-17 20:08:01,888 - INFO - ASTAR found path: length=23, nodes_expanded=95
+2025-11-17 20:08:01,923 - INFO - ASTAR found path: length=22, nodes_expanded=94
+2025-11-17 20:08:01,955 - INFO - ASTAR found path: length=21, nodes_expanded=93
+2025-11-17 20:08:01,988 - INFO - ASTAR found path: length=20, nodes_expanded=92
+2025-11-17 20:08:02,024 - INFO - ASTAR found path: length=19, nodes_expanded=91
+2025-11-17 20:08:02,056 - INFO - ASTAR found path: length=18, nodes_expanded=84
+2025-11-17 20:08:02,090 - INFO - ASTAR found path: length=17, nodes_expanded=77
+2025-11-17 20:08:02,124 - INFO - ASTAR found path: length=16, nodes_expanded=70
+2025-11-17 20:08:02,158 - INFO - ASTAR found path: length=15, nodes_expanded=63
+2025-11-17 20:08:02,191 - INFO - ASTAR found path: length=14, nodes_expanded=56
+2025-11-17 20:08:02,224 - INFO - ASTAR found path: length=13, nodes_expanded=49
+2025-11-17 20:08:02,258 - INFO - ASTAR found path: length=12, nodes_expanded=42
+2025-11-17 20:08:02,292 - INFO - ASTAR found path: length=11, nodes_expanded=35
+2025-11-17 20:08:02,326 - INFO - ASTAR found path: length=10, nodes_expanded=28
+2025-11-17 20:08:02,360 - INFO - ASTAR found path: length=9, nodes_expanded=21
+2025-11-17 20:08:02,393 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:08:02,427 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:02,461 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:02,495 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:02,528 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:02,561 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:02,595 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:02,629 - INFO - ASTAR found path: length=14, nodes_expanded=34
+2025-11-17 20:08:02,663 - INFO - ASTAR found path: length=13, nodes_expanded=19
+2025-11-17 20:08:02,697 - INFO - ASTAR found path: length=12, nodes_expanded=18
+2025-11-17 20:08:02,730 - INFO - ASTAR found path: length=11, nodes_expanded=17
+2025-11-17 20:08:02,764 - INFO - ASTAR found path: length=10, nodes_expanded=16
+2025-11-17 20:08:02,798 - INFO - ASTAR found path: length=9, nodes_expanded=15
+2025-11-17 20:08:02,832 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:08:02,864 - INFO - ASTAR found path: length=7, nodes_expanded=13
+2025-11-17 20:08:02,900 - INFO - ASTAR found path: length=6, nodes_expanded=12
+2025-11-17 20:08:02,933 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:02,967 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:03,002 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:03,035 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:03,069 - INFO - ASTAR found path: length=19, nodes_expanded=65
+2025-11-17 20:08:03,103 - INFO - ASTAR found path: length=18, nodes_expanded=53
+2025-11-17 20:08:03,136 - INFO - ASTAR found path: length=17, nodes_expanded=34
+2025-11-17 20:08:03,170 - INFO - ASTAR found path: length=16, nodes_expanded=28
+2025-11-17 20:08:03,204 - INFO - ASTAR found path: length=15, nodes_expanded=27
+2025-11-17 20:08:03,237 - INFO - ASTAR found path: length=14, nodes_expanded=25
+2025-11-17 20:08:03,272 - INFO - ASTAR found path: length=13, nodes_expanded=21
+2025-11-17 20:08:03,305 - INFO - ASTAR found path: length=12, nodes_expanded=19
+2025-11-17 20:08:03,339 - INFO - ASTAR found path: length=11, nodes_expanded=17
+2025-11-17 20:08:03,373 - INFO - ASTAR found path: length=10, nodes_expanded=15
+2025-11-17 20:08:03,406 - INFO - ASTAR found path: length=9, nodes_expanded=13
+2025-11-17 20:08:03,440 - INFO - ASTAR found path: length=8, nodes_expanded=11
+2025-11-17 20:08:03,474 - INFO - ASTAR found path: length=7, nodes_expanded=9
+2025-11-17 20:08:03,506 - INFO - ASTAR found path: length=6, nodes_expanded=7
+2025-11-17 20:08:03,539 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:03,573 - INFO - ASTAR found path: length=4, nodes_expanded=5
+2025-11-17 20:08:03,607 - INFO - ASTAR found path: length=3, nodes_expanded=4
+2025-11-17 20:08:03,640 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:03,675 - INFO - ASTAR found path: length=19, nodes_expanded=95
+2025-11-17 20:08:03,709 - INFO - ASTAR found path: length=18, nodes_expanded=88
+2025-11-17 20:08:03,743 - INFO - ASTAR found path: length=17, nodes_expanded=77
+2025-11-17 20:08:03,776 - INFO - ASTAR found path: length=16, nodes_expanded=66
+2025-11-17 20:08:03,810 - INFO - ASTAR found path: length=15, nodes_expanded=55
+2025-11-17 20:08:03,843 - INFO - ASTAR found path: length=14, nodes_expanded=44
+2025-11-17 20:08:03,876 - INFO - ASTAR found path: length=13, nodes_expanded=33
+2025-11-17 20:08:03,909 - INFO - ASTAR found path: length=12, nodes_expanded=22
+2025-11-17 20:08:03,943 - INFO - ASTAR found path: length=11, nodes_expanded=11
+2025-11-17 20:08:03,976 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:08:04,009 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:08:04,043 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:08:04,076 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:04,110 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:04,143 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:04,176 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:04,210 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:04,243 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:04,277 - INFO - ASTAR found path: length=15, nodes_expanded=57
+2025-11-17 20:08:04,310 - INFO - ASTAR found path: length=14, nodes_expanded=56
+2025-11-17 20:08:04,344 - INFO - ASTAR found path: length=13, nodes_expanded=49
+2025-11-17 20:08:04,378 - INFO - ASTAR found path: length=12, nodes_expanded=42
+2025-11-17 20:08:04,411 - INFO - ASTAR found path: length=11, nodes_expanded=35
+2025-11-17 20:08:04,444 - INFO - ASTAR found path: length=10, nodes_expanded=28
+2025-11-17 20:08:04,478 - INFO - ASTAR found path: length=9, nodes_expanded=21
+2025-11-17 20:08:04,511 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:08:04,545 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:04,579 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:04,614 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:04,648 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:04,680 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:04,714 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:04,748 - INFO - ASTAR found path: length=15, nodes_expanded=58
+2025-11-17 20:08:04,781 - INFO - ASTAR found path: length=14, nodes_expanded=50
+2025-11-17 20:08:04,814 - INFO - ASTAR found path: length=13, nodes_expanded=42
+2025-11-17 20:08:04,848 - INFO - ASTAR found path: length=12, nodes_expanded=34
+2025-11-17 20:08:04,882 - INFO - ASTAR found path: length=11, nodes_expanded=26
+2025-11-17 20:08:04,915 - INFO - ASTAR found path: length=10, nodes_expanded=18
+2025-11-17 20:08:04,948 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:08:04,982 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:08:05,017 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:05,051 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:05,084 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:05,119 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:05,153 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:05,187 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:05,221 - INFO - ASTAR found path: length=10, nodes_expanded=17
+2025-11-17 20:08:05,256 - INFO - ASTAR found path: length=9, nodes_expanded=16
+2025-11-17 20:08:05,289 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:08:05,323 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:05,357 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:05,390 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:05,424 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:05,457 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:05,490 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:05,524 - INFO - ASTAR found path: length=31, nodes_expanded=249
+2025-11-17 20:08:05,558 - INFO - ASTAR found path: length=30, nodes_expanded=153
+2025-11-17 20:08:05,592 - INFO - ASTAR found path: length=29, nodes_expanded=147
+2025-11-17 20:08:05,626 - INFO - ASTAR found path: length=28, nodes_expanded=143
+2025-11-17 20:08:05,659 - INFO - ASTAR found path: length=25, nodes_expanded=103
+2025-11-17 20:08:05,693 - INFO - ASTAR found path: length=22, nodes_expanded=74
+2025-11-17 20:08:05,727 - INFO - ASTAR found path: length=19, nodes_expanded=55
+2025-11-17 20:08:05,762 - INFO - ASTAR found path: length=16, nodes_expanded=41
+2025-11-17 20:08:05,796 - INFO - ASTAR found path: length=13, nodes_expanded=30
+2025-11-17 20:08:05,830 - INFO - ASTAR found path: length=10, nodes_expanded=22
+2025-11-17 20:08:05,864 - INFO - ASTAR found path: length=9, nodes_expanded=24
+2025-11-17 20:08:05,899 - INFO - ASTAR found path: length=8, nodes_expanded=20
+2025-11-17 20:08:05,932 - INFO - ASTAR found path: length=7, nodes_expanded=16
+2025-11-17 20:08:05,965 - INFO - ASTAR found path: length=6, nodes_expanded=12
+2025-11-17 20:08:05,999 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:06,033 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:06,065 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:06,099 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:06,133 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:08:06,166 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:08:06,199 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:08:06,233 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:06,266 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:06,301 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:06,335 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:06,368 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:06,403 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:06,436 - INFO - ASTAR found path: length=13, nodes_expanded=31
+2025-11-17 20:08:06,468 - INFO - ASTAR found path: length=12, nodes_expanded=30
+2025-11-17 20:08:06,502 - INFO - ASTAR found path: length=11, nodes_expanded=27
+2025-11-17 20:08:06,536 - INFO - ASTAR found path: length=10, nodes_expanded=24
+2025-11-17 20:08:06,569 - INFO - ASTAR found path: length=9, nodes_expanded=21
+2025-11-17 20:08:06,603 - INFO - ASTAR found path: length=8, nodes_expanded=18
+2025-11-17 20:08:06,636 - INFO - ASTAR found path: length=7, nodes_expanded=15
+2025-11-17 20:08:06,669 - INFO - ASTAR found path: length=6, nodes_expanded=12
+2025-11-17 20:08:06,702 - INFO - ASTAR found path: length=5, nodes_expanded=9
+2025-11-17 20:08:06,734 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:08:06,768 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:06,801 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:06,834 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:06,868 - INFO - ASTAR found path: length=8, nodes_expanded=13
+2025-11-17 20:08:06,901 - INFO - ASTAR found path: length=7, nodes_expanded=12
+2025-11-17 20:08:06,936 - INFO - ASTAR found path: length=6, nodes_expanded=10
+2025-11-17 20:08:06,969 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:07,003 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:08:07,037 - INFO - ASTAR found path: length=3, nodes_expanded=4
+2025-11-17 20:08:07,071 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:07,104 - INFO - ASTAR found path: length=24, nodes_expanded=75
+2025-11-17 20:08:07,138 - INFO - ASTAR found path: length=23, nodes_expanded=70
+2025-11-17 20:08:07,172 - INFO - ASTAR found path: length=22, nodes_expanded=65
+2025-11-17 20:08:07,205 - INFO - ASTAR found path: length=21, nodes_expanded=60
+2025-11-17 20:08:07,239 - INFO - ASTAR found path: length=20, nodes_expanded=54
+2025-11-17 20:08:07,272 - INFO - ASTAR found path: length=19, nodes_expanded=48
+2025-11-17 20:08:07,305 - INFO - ASTAR found path: length=18, nodes_expanded=44
+2025-11-17 20:08:07,340 - INFO - ASTAR found path: length=17, nodes_expanded=39
+2025-11-17 20:08:07,374 - INFO - ASTAR found path: length=16, nodes_expanded=35
+2025-11-17 20:08:07,407 - INFO - ASTAR found path: length=15, nodes_expanded=33
+2025-11-17 20:08:07,440 - INFO - ASTAR found path: length=14, nodes_expanded=32
+2025-11-17 20:08:07,474 - INFO - ASTAR found path: length=13, nodes_expanded=31
+2025-11-17 20:08:07,508 - INFO - ASTAR found path: length=12, nodes_expanded=30
+2025-11-17 20:08:07,541 - INFO - ASTAR found path: length=11, nodes_expanded=20
+2025-11-17 20:08:07,575 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:08:07,609 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:08:07,642 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:08:07,676 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:07,710 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:07,744 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:07,777 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:07,811 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:07,844 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:07,878 - INFO - ASTAR found path: length=8, nodes_expanded=13
+2025-11-17 20:08:07,912 - INFO - ASTAR found path: length=7, nodes_expanded=12
+2025-11-17 20:08:07,944 - INFO - ASTAR found path: length=6, nodes_expanded=10
+2025-11-17 20:08:07,978 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:08,013 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:08:08,046 - INFO - ASTAR found path: length=3, nodes_expanded=4
+2025-11-17 20:08:08,078 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:08,113 - INFO - ASTAR found path: length=26, nodes_expanded=161
+2025-11-17 20:08:08,145 - INFO - ASTAR found path: length=25, nodes_expanded=154
+2025-11-17 20:08:08,179 - INFO - ASTAR found path: length=24, nodes_expanded=124
+2025-11-17 20:08:08,212 - INFO - ASTAR found path: length=23, nodes_expanded=47
+2025-11-17 20:08:08,244 - INFO - ASTAR found path: length=22, nodes_expanded=46
+2025-11-17 20:08:08,277 - INFO - ASTAR found path: length=21, nodes_expanded=45
+2025-11-17 20:08:08,310 - INFO - ASTAR found path: length=20, nodes_expanded=44
+2025-11-17 20:08:08,344 - INFO - ASTAR found path: length=19, nodes_expanded=43
+2025-11-17 20:08:08,380 - INFO - ASTAR found path: length=18, nodes_expanded=42
+2025-11-17 20:08:08,414 - INFO - ASTAR found path: length=17, nodes_expanded=41
+2025-11-17 20:08:08,447 - INFO - ASTAR found path: length=16, nodes_expanded=40
+2025-11-17 20:08:08,481 - INFO - ASTAR found path: length=15, nodes_expanded=39
+2025-11-17 20:08:08,514 - INFO - ASTAR found path: length=14, nodes_expanded=26
+2025-11-17 20:08:08,547 - INFO - ASTAR found path: length=13, nodes_expanded=13
+2025-11-17 20:08:08,580 - INFO - ASTAR found path: length=12, nodes_expanded=12
+2025-11-17 20:08:08,614 - INFO - ASTAR found path: length=11, nodes_expanded=11
+2025-11-17 20:08:08,647 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:08:08,679 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:08:08,712 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:08:08,745 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:08,779 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:08,812 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:08,847 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:08,880 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:08,914 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:08,947 - INFO - ASTAR found path: length=10, nodes_expanded=28
+2025-11-17 20:08:08,982 - INFO - ASTAR found path: length=9, nodes_expanded=24
+2025-11-17 20:08:09,015 - INFO - ASTAR found path: length=8, nodes_expanded=20
+2025-11-17 20:08:09,048 - INFO - ASTAR found path: length=7, nodes_expanded=16
+2025-11-17 20:08:09,082 - INFO - ASTAR found path: length=6, nodes_expanded=12
+2025-11-17 20:08:09,115 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:09,148 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:09,181 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:09,215 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:09,250 - INFO - ASTAR found path: length=24, nodes_expanded=91
+2025-11-17 20:08:09,284 - INFO - ASTAR found path: length=23, nodes_expanded=90
+2025-11-17 20:08:09,318 - INFO - ASTAR found path: length=22, nodes_expanded=87
+2025-11-17 20:08:09,351 - INFO - ASTAR found path: length=21, nodes_expanded=84
+2025-11-17 20:08:09,384 - INFO - ASTAR found path: length=20, nodes_expanded=81
+2025-11-17 20:08:09,419 - INFO - ASTAR found path: length=19, nodes_expanded=78
+2025-11-17 20:08:09,452 - INFO - ASTAR found path: length=18, nodes_expanded=75
+2025-11-17 20:08:09,485 - INFO - ASTAR found path: length=17, nodes_expanded=72
+2025-11-17 20:08:09,519 - INFO - ASTAR found path: length=16, nodes_expanded=60
+2025-11-17 20:08:09,552 - INFO - ASTAR found path: length=15, nodes_expanded=48
+2025-11-17 20:08:09,586 - INFO - ASTAR found path: length=14, nodes_expanded=36
+2025-11-17 20:08:09,619 - INFO - ASTAR found path: length=13, nodes_expanded=24
+2025-11-17 20:08:09,652 - INFO - ASTAR found path: length=12, nodes_expanded=12
+2025-11-17 20:08:09,686 - INFO - ASTAR found path: length=11, nodes_expanded=11
+2025-11-17 20:08:09,719 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:08:09,751 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:08:09,784 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:08:09,819 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:09,854 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:09,888 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:09,921 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:09,956 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:09,989 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:10,023 - INFO - ASTAR found path: length=9, nodes_expanded=15
+2025-11-17 20:08:10,057 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:08:10,091 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:10,125 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:10,159 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:10,192 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:10,227 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:10,260 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:10,294 - INFO - ASTAR found path: length=13, nodes_expanded=37
+2025-11-17 20:08:10,328 - INFO - ASTAR found path: length=12, nodes_expanded=39
+2025-11-17 20:08:10,362 - INFO - ASTAR found path: length=11, nodes_expanded=35
+2025-11-17 20:08:10,395 - INFO - ASTAR found path: length=10, nodes_expanded=28
+2025-11-17 20:08:10,429 - INFO - ASTAR found path: length=9, nodes_expanded=21
+2025-11-17 20:08:10,462 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:08:10,496 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:10,530 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:10,563 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:10,597 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:10,631 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:10,665 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:10,699 - INFO - ASTAR found path: length=5, nodes_expanded=7
+2025-11-17 20:08:10,733 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:08:10,766 - INFO - ASTAR found path: length=3, nodes_expanded=4
+2025-11-17 20:08:10,800 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:10,833 - INFO - ASTAR found path: length=7, nodes_expanded=12
+2025-11-17 20:08:10,867 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:10,900 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:10,933 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:10,967 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:11,001 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:11,035 - INFO - ASTAR found path: length=8, nodes_expanded=13
+2025-11-17 20:08:11,069 - INFO - ASTAR found path: length=7, nodes_expanded=12
+2025-11-17 20:08:11,102 - INFO - ASTAR found path: length=6, nodes_expanded=10
+2025-11-17 20:08:11,135 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:11,169 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:08:11,203 - INFO - ASTAR found path: length=3, nodes_expanded=4
+2025-11-17 20:08:11,237 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:11,271 - INFO - ASTAR found path: length=24, nodes_expanded=119
+2025-11-17 20:08:11,304 - INFO - ASTAR found path: length=23, nodes_expanded=107
+2025-11-17 20:08:11,339 - INFO - ASTAR found path: length=22, nodes_expanded=106
+2025-11-17 20:08:11,372 - INFO - ASTAR found path: length=21, nodes_expanded=105
+2025-11-17 20:08:11,406 - INFO - ASTAR found path: length=20, nodes_expanded=98
+2025-11-17 20:08:11,439 - INFO - ASTAR found path: length=19, nodes_expanded=91
+2025-11-17 20:08:11,473 - INFO - ASTAR found path: length=18, nodes_expanded=84
+2025-11-17 20:08:11,507 - INFO - ASTAR found path: length=17, nodes_expanded=77
+2025-11-17 20:08:11,542 - INFO - ASTAR found path: length=16, nodes_expanded=70
+2025-11-17 20:08:11,574 - INFO - ASTAR found path: length=15, nodes_expanded=63
+2025-11-17 20:08:11,607 - INFO - ASTAR found path: length=14, nodes_expanded=56
+2025-11-17 20:08:11,641 - INFO - ASTAR found path: length=13, nodes_expanded=49
+2025-11-17 20:08:11,675 - INFO - ASTAR found path: length=12, nodes_expanded=42
+2025-11-17 20:08:11,709 - INFO - ASTAR found path: length=11, nodes_expanded=35
+2025-11-17 20:08:11,743 - INFO - ASTAR found path: length=10, nodes_expanded=28
+2025-11-17 20:08:11,776 - INFO - ASTAR found path: length=9, nodes_expanded=21
+2025-11-17 20:08:11,809 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:08:11,843 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:11,875 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:11,909 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:11,942 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:11,976 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:12,010 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:12,045 - INFO - ASTAR found path: length=27, nodes_expanded=140
+2025-11-17 20:08:12,079 - INFO - ASTAR found path: length=26, nodes_expanded=70
+2025-11-17 20:08:12,112 - INFO - ASTAR found path: length=25, nodes_expanded=70
+2025-11-17 20:08:12,145 - INFO - ASTAR found path: length=24, nodes_expanded=76
+2025-11-17 20:08:12,179 - INFO - ASTAR found path: length=23, nodes_expanded=76
+2025-11-17 20:08:12,213 - INFO - ASTAR found path: length=22, nodes_expanded=76
+2025-11-17 20:08:12,245 - INFO - ASTAR found path: length=21, nodes_expanded=76
+2025-11-17 20:08:12,280 - INFO - ASTAR found path: length=20, nodes_expanded=76
+2025-11-17 20:08:12,313 - INFO - ASTAR found path: length=19, nodes_expanded=76
+2025-11-17 20:08:12,345 - INFO - ASTAR found path: length=18, nodes_expanded=68
+2025-11-17 20:08:12,379 - INFO - ASTAR found path: length=17, nodes_expanded=60
+2025-11-17 20:08:12,413 - INFO - ASTAR found path: length=16, nodes_expanded=52
+2025-11-17 20:08:12,447 - INFO - ASTAR found path: length=15, nodes_expanded=45
+2025-11-17 20:08:12,481 - INFO - ASTAR found path: length=14, nodes_expanded=36
+2025-11-17 20:08:12,514 - INFO - ASTAR found path: length=13, nodes_expanded=30
+2025-11-17 20:08:12,547 - INFO - ASTAR found path: length=12, nodes_expanded=24
+2025-11-17 20:08:12,581 - INFO - ASTAR found path: length=11, nodes_expanded=26
+2025-11-17 20:08:12,614 - INFO - ASTAR found path: length=10, nodes_expanded=28
+2025-11-17 20:08:12,647 - INFO - ASTAR found path: length=9, nodes_expanded=21
+2025-11-17 20:08:12,681 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:08:12,715 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:12,749 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:12,784 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:12,817 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:12,851 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:12,884 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:12,916 - INFO - ASTAR found path: length=20, nodes_expanded=73
+2025-11-17 20:08:12,950 - INFO - ASTAR found path: length=19, nodes_expanded=66
+2025-11-17 20:08:12,984 - INFO - ASTAR found path: length=18, nodes_expanded=63
+2025-11-17 20:08:13,017 - INFO - ASTAR found path: length=17, nodes_expanded=54
+2025-11-17 20:08:13,050 - INFO - ASTAR found path: length=14, nodes_expanded=22
+2025-11-17 20:08:13,083 - INFO - ASTAR found path: length=13, nodes_expanded=13
+2025-11-17 20:08:13,117 - INFO - ASTAR found path: length=12, nodes_expanded=12
+2025-11-17 20:08:13,150 - INFO - ASTAR found path: length=11, nodes_expanded=11
+2025-11-17 20:08:13,184 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:08:13,217 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:08:13,251 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:08:13,283 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:13,317 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:13,351 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:13,383 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:13,417 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:13,452 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:13,486 - INFO - ASTAR found path: length=12, nodes_expanded=12
+2025-11-17 20:08:13,519 - INFO - ASTAR found path: length=11, nodes_expanded=11
+2025-11-17 20:08:13,553 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:08:13,586 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:08:13,620 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:08:13,654 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:13,688 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:13,722 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:13,755 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:13,788 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:13,821 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:13,854 - INFO - ASTAR found path: length=13, nodes_expanded=40
+2025-11-17 20:08:13,887 - INFO - ASTAR found path: length=12, nodes_expanded=38
+2025-11-17 20:08:13,921 - INFO - ASTAR found path: length=11, nodes_expanded=36
+2025-11-17 20:08:13,955 - INFO - ASTAR found path: length=10, nodes_expanded=30
+2025-11-17 20:08:13,987 - INFO - ASTAR found path: length=9, nodes_expanded=24
+2025-11-17 20:08:14,020 - INFO - ASTAR found path: length=8, nodes_expanded=18
+2025-11-17 20:08:14,054 - INFO - ASTAR found path: length=7, nodes_expanded=12
+2025-11-17 20:08:14,087 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:14,121 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:14,156 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:14,189 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:14,222 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:14,256 - INFO - ASTAR found path: length=17, nodes_expanded=53
+2025-11-17 20:08:14,290 - INFO - ASTAR found path: length=16, nodes_expanded=52
+2025-11-17 20:08:14,323 - INFO - ASTAR found path: length=15, nodes_expanded=48
+2025-11-17 20:08:14,356 - INFO - ASTAR found path: length=14, nodes_expanded=44
+2025-11-17 20:08:14,391 - INFO - ASTAR found path: length=13, nodes_expanded=40
+2025-11-17 20:08:14,425 - INFO - ASTAR found path: length=12, nodes_expanded=36
+2025-11-17 20:08:14,460 - INFO - ASTAR found path: length=11, nodes_expanded=32
+2025-11-17 20:08:14,493 - INFO - ASTAR found path: length=10, nodes_expanded=28
+2025-11-17 20:08:14,527 - INFO - ASTAR found path: length=9, nodes_expanded=24
+2025-11-17 20:08:14,561 - INFO - ASTAR found path: length=8, nodes_expanded=20
+2025-11-17 20:08:14,595 - INFO - ASTAR found path: length=7, nodes_expanded=16
+2025-11-17 20:08:14,627 - INFO - ASTAR found path: length=6, nodes_expanded=12
+2025-11-17 20:08:14,662 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:14,695 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:14,729 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:14,762 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:14,796 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:14,830 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:14,864 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:14,897 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:14,931 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:14,966 - INFO - ASTAR found path: length=37, nodes_expanded=184
+2025-11-17 20:08:15,000 - INFO - ASTAR found path: length=34, nodes_expanded=166
+2025-11-17 20:08:15,034 - INFO - ASTAR found path: length=31, nodes_expanded=89
+2025-11-17 20:08:15,067 - INFO - ASTAR found path: length=28, nodes_expanded=58
+2025-11-17 20:08:15,099 - INFO - ASTAR found path: length=25, nodes_expanded=40
+2025-11-17 20:08:15,133 - INFO - ASTAR found path: length=22, nodes_expanded=22
+2025-11-17 20:08:15,167 - INFO - ASTAR found path: length=21, nodes_expanded=38
+2025-11-17 20:08:15,201 - INFO - ASTAR found path: length=20, nodes_expanded=54
+2025-11-17 20:08:15,233 - INFO - ASTAR found path: length=19, nodes_expanded=51
+2025-11-17 20:08:15,267 - INFO - ASTAR found path: length=18, nodes_expanded=48
+2025-11-17 20:08:15,301 - INFO - ASTAR found path: length=17, nodes_expanded=45
+2025-11-17 20:08:15,336 - INFO - ASTAR found path: length=16, nodes_expanded=42
+2025-11-17 20:08:15,370 - INFO - ASTAR found path: length=15, nodes_expanded=39
+2025-11-17 20:08:15,403 - INFO - ASTAR found path: length=14, nodes_expanded=36
+2025-11-17 20:08:15,436 - INFO - ASTAR found path: length=13, nodes_expanded=33
+2025-11-17 20:08:15,470 - INFO - ASTAR found path: length=12, nodes_expanded=30
+2025-11-17 20:08:15,504 - INFO - ASTAR found path: length=11, nodes_expanded=27
+2025-11-17 20:08:15,537 - INFO - ASTAR found path: length=10, nodes_expanded=24
+2025-11-17 20:08:15,571 - INFO - ASTAR found path: length=9, nodes_expanded=21
+2025-11-17 20:08:15,606 - INFO - ASTAR found path: length=8, nodes_expanded=18
+2025-11-17 20:08:15,639 - INFO - ASTAR found path: length=7, nodes_expanded=15
+2025-11-17 20:08:15,674 - INFO - ASTAR found path: length=6, nodes_expanded=12
+2025-11-17 20:08:15,708 - INFO - ASTAR found path: length=5, nodes_expanded=9
+2025-11-17 20:08:15,741 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:08:15,774 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:15,807 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:15,841 - INFO - ASTAR found path: length=8, nodes_expanded=13
+2025-11-17 20:08:15,875 - INFO - ASTAR found path: length=7, nodes_expanded=9
+2025-11-17 20:08:15,907 - INFO - ASTAR found path: length=6, nodes_expanded=8
+2025-11-17 20:08:15,941 - INFO - ASTAR found path: length=5, nodes_expanded=7
+2025-11-17 20:08:15,974 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:08:16,009 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:16,042 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:16,077 - INFO - ASTAR found path: length=30, nodes_expanded=181
+2025-11-17 20:08:16,111 - INFO - ASTAR found path: length=29, nodes_expanded=160
+2025-11-17 20:08:16,144 - INFO - ASTAR found path: length=28, nodes_expanded=96
+2025-11-17 20:08:16,179 - INFO - ASTAR found path: length=27, nodes_expanded=95
+2025-11-17 20:08:16,211 - INFO - ASTAR found path: length=26, nodes_expanded=94
+2025-11-17 20:08:16,244 - INFO - ASTAR found path: length=25, nodes_expanded=93
+2025-11-17 20:08:16,277 - INFO - ASTAR found path: length=24, nodes_expanded=92
+2025-11-17 20:08:16,310 - INFO - ASTAR found path: length=23, nodes_expanded=91
+2025-11-17 20:08:16,344 - INFO - ASTAR found path: length=22, nodes_expanded=90
+2025-11-17 20:08:16,378 - INFO - ASTAR found path: length=21, nodes_expanded=85
+2025-11-17 20:08:16,412 - INFO - ASTAR found path: length=20, nodes_expanded=80
+2025-11-17 20:08:16,446 - INFO - ASTAR found path: length=19, nodes_expanded=75
+2025-11-17 20:08:16,479 - INFO - ASTAR found path: length=18, nodes_expanded=70
+2025-11-17 20:08:16,513 - INFO - ASTAR found path: length=17, nodes_expanded=65
+2025-11-17 20:08:16,546 - INFO - ASTAR found path: length=16, nodes_expanded=60
+2025-11-17 20:08:16,580 - INFO - ASTAR found path: length=15, nodes_expanded=55
+2025-11-17 20:08:16,613 - INFO - ASTAR found path: length=14, nodes_expanded=50
+2025-11-17 20:08:16,646 - INFO - ASTAR found path: length=13, nodes_expanded=45
+2025-11-17 20:08:16,680 - INFO - ASTAR found path: length=12, nodes_expanded=40
+2025-11-17 20:08:16,715 - INFO - ASTAR found path: length=11, nodes_expanded=35
+2025-11-17 20:08:16,748 - INFO - ASTAR found path: length=10, nodes_expanded=30
+2025-11-17 20:08:16,781 - INFO - ASTAR found path: length=9, nodes_expanded=25
+2025-11-17 20:08:16,814 - INFO - ASTAR found path: length=8, nodes_expanded=20
+2025-11-17 20:08:16,847 - INFO - ASTAR found path: length=7, nodes_expanded=15
+2025-11-17 20:08:16,879 - INFO - ASTAR found path: length=6, nodes_expanded=10
+2025-11-17 20:08:16,913 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:16,948 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:16,981 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:17,013 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:17,048 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:17,050 - INFO - Using safe move fallback
+2025-11-17 20:08:17,082 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:17,084 - INFO - Using safe move fallback
+2025-11-17 20:08:17,115 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:17,116 - INFO - Using tail-chase strategy
+2025-11-17 20:08:17,148 - INFO - ASTAR found path: length=16, nodes_expanded=51
+2025-11-17 20:08:17,181 - INFO - ASTAR found path: length=13, nodes_expanded=17
+2025-11-17 20:08:17,215 - INFO - ASTAR found path: length=12, nodes_expanded=16
+2025-11-17 20:08:17,249 - INFO - ASTAR found path: length=11, nodes_expanded=14
+2025-11-17 20:08:17,283 - INFO - ASTAR found path: length=10, nodes_expanded=13
+2025-11-17 20:08:17,317 - INFO - ASTAR found path: length=9, nodes_expanded=12
+2025-11-17 20:08:17,349 - INFO - ASTAR found path: length=8, nodes_expanded=11
+2025-11-17 20:08:17,383 - INFO - ASTAR found path: length=7, nodes_expanded=10
+2025-11-17 20:08:17,417 - INFO - ASTAR found path: length=6, nodes_expanded=9
+2025-11-17 20:08:17,450 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:17,483 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:17,517 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:17,551 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:17,585 - INFO - ASTAR found path: length=13, nodes_expanded=49
+2025-11-17 20:08:17,618 - INFO - ASTAR found path: length=12, nodes_expanded=42
+2025-11-17 20:08:17,651 - INFO - ASTAR found path: length=11, nodes_expanded=35
+2025-11-17 20:08:17,684 - INFO - ASTAR found path: length=10, nodes_expanded=28
+2025-11-17 20:08:17,718 - INFO - ASTAR found path: length=9, nodes_expanded=21
+2025-11-17 20:08:17,751 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:08:17,785 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:17,819 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:17,853 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:17,887 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:17,921 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:17,954 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:17,991 - INFO - ASTAR found path: length=44, nodes_expanded=255
+2025-11-17 20:08:18,023 - INFO - ASTAR found path: length=43, nodes_expanded=255
+2025-11-17 20:08:18,057 - INFO - ASTAR found path: length=42, nodes_expanded=246
+2025-11-17 20:08:18,091 - INFO - ASTAR found path: length=41, nodes_expanded=239
+2025-11-17 20:08:18,125 - INFO - ASTAR found path: length=40, nodes_expanded=231
+2025-11-17 20:08:18,159 - INFO - ASTAR found path: length=39, nodes_expanded=221
+2025-11-17 20:08:18,194 - INFO - ASTAR found path: length=38, nodes_expanded=192
+2025-11-17 20:08:18,227 - INFO - ASTAR found path: length=37, nodes_expanded=191
+2025-11-17 20:08:18,259 - INFO - ASTAR found path: length=36, nodes_expanded=77
+2025-11-17 20:08:18,292 - INFO - ASTAR found path: length=35, nodes_expanded=74
+2025-11-17 20:08:18,328 - INFO - ASTAR found path: length=34, nodes_expanded=70
+2025-11-17 20:08:18,359 - INFO - ASTAR found path: length=33, nodes_expanded=65
+2025-11-17 20:08:18,394 - INFO - ASTAR found path: length=32, nodes_expanded=59
+2025-11-17 20:08:18,428 - INFO - ASTAR found path: length=31, nodes_expanded=51
+2025-11-17 20:08:18,462 - INFO - ASTAR found path: length=30, nodes_expanded=49
+2025-11-17 20:08:18,495 - INFO - ASTAR found path: length=29, nodes_expanded=47
+2025-11-17 20:08:18,528 - INFO - ASTAR found path: length=28, nodes_expanded=46
+2025-11-17 20:08:18,561 - INFO - ASTAR found path: length=27, nodes_expanded=45
+2025-11-17 20:08:18,594 - INFO - ASTAR found path: length=26, nodes_expanded=44
+2025-11-17 20:08:18,627 - INFO - ASTAR found path: length=25, nodes_expanded=43
+2025-11-17 20:08:18,661 - INFO - ASTAR found path: length=24, nodes_expanded=42
+2025-11-17 20:08:18,695 - INFO - ASTAR found path: length=23, nodes_expanded=41
+2025-11-17 20:08:18,729 - INFO - ASTAR found path: length=22, nodes_expanded=40
+2025-11-17 20:08:18,763 - INFO - ASTAR found path: length=21, nodes_expanded=39
+2025-11-17 20:08:18,797 - INFO - ASTAR found path: length=20, nodes_expanded=38
+2025-11-17 20:08:18,831 - INFO - ASTAR found path: length=19, nodes_expanded=36
+2025-11-17 20:08:18,864 - INFO - ASTAR found path: length=18, nodes_expanded=34
+2025-11-17 20:08:18,899 - INFO - ASTAR found path: length=17, nodes_expanded=32
+2025-11-17 20:08:18,932 - INFO - ASTAR found path: length=16, nodes_expanded=30
+2025-11-17 20:08:18,965 - INFO - ASTAR found path: length=15, nodes_expanded=28
+2025-11-17 20:08:18,998 - INFO - ASTAR found path: length=14, nodes_expanded=26
+2025-11-17 20:08:19,032 - INFO - ASTAR found path: length=13, nodes_expanded=24
+2025-11-17 20:08:19,065 - INFO - ASTAR found path: length=12, nodes_expanded=22
+2025-11-17 20:08:19,100 - INFO - ASTAR found path: length=11, nodes_expanded=20
+2025-11-17 20:08:19,134 - INFO - ASTAR found path: length=10, nodes_expanded=18
+2025-11-17 20:08:19,168 - INFO - ASTAR found path: length=9, nodes_expanded=16
+2025-11-17 20:08:19,203 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:08:19,238 - INFO - ASTAR found path: length=7, nodes_expanded=12
+2025-11-17 20:08:19,272 - INFO - ASTAR found path: length=6, nodes_expanded=10
+2025-11-17 20:08:19,305 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:19,339 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:08:19,374 - INFO - ASTAR found path: length=3, nodes_expanded=4
+2025-11-17 20:08:19,407 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:19,441 - INFO - ASTAR found path: length=9, nodes_expanded=17
+2025-11-17 20:08:19,474 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:08:19,507 - INFO - ASTAR found path: length=7, nodes_expanded=13
+2025-11-17 20:08:19,539 - INFO - ASTAR found path: length=6, nodes_expanded=12
+2025-11-17 20:08:19,573 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:19,607 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:19,639 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:19,673 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:19,706 - INFO - ASTAR found path: length=5, nodes_expanded=7
+2025-11-17 20:08:19,740 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:08:19,774 - INFO - ASTAR found path: length=3, nodes_expanded=4
+2025-11-17 20:08:19,808 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:19,843 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:19,843 - INFO - Using tail-chase strategy
+2025-11-17 20:08:19,876 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:19,877 - INFO - Using tail-chase strategy
+2025-11-17 20:08:19,911 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:19,912 - INFO - Using tail-chase strategy
+2025-11-17 20:08:19,946 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:19,947 - INFO - Using tail-chase strategy
+2025-11-17 20:08:19,979 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:19,979 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,012 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,013 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,045 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,045 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,078 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,079 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,112 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,112 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,146 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,146 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,180 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,180 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,213 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,214 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,247 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,247 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,282 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,283 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,315 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,315 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,348 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,348 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,382 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,383 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,414 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,414 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,446 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,447 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,479 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,480 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,513 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,513 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,546 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,547 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,580 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,581 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,613 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,614 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,647 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,647 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,679 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,679 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,712 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,712 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,745 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,746 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,780 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,781 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,813 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,814 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,846 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,846 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,879 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:20,879 - INFO - Using tail-chase strategy
+2025-11-17 20:08:20,912 - INFO - ASTAR found path: length=5, nodes_expanded=7
+2025-11-17 20:08:20,946 - INFO - ASTAR found path: length=4, nodes_expanded=5
+2025-11-17 20:08:20,980 - INFO - ASTAR found path: length=3, nodes_expanded=4
+2025-11-17 20:08:21,014 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:21,048 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:08:21,081 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:08:21,115 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:21,149 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:21,182 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:21,215 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:21,249 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:21,283 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:21,317 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:21,318 - INFO - Using tail-chase strategy
+2025-11-17 20:08:21,352 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:21,353 - INFO - Using tail-chase strategy
+2025-11-17 20:08:21,386 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:21,387 - INFO - Using tail-chase strategy
+2025-11-17 20:08:21,419 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:21,420 - INFO - Using tail-chase strategy
+2025-11-17 20:08:21,453 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:21,454 - INFO - Using tail-chase strategy
+2025-11-17 20:08:21,487 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:21,488 - INFO - Using tail-chase strategy
+2025-11-17 20:08:21,521 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:21,522 - INFO - Using tail-chase strategy
+2025-11-17 20:08:21,555 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:21,556 - INFO - Using tail-chase strategy
+2025-11-17 20:08:21,589 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:21,590 - INFO - Using tail-chase strategy
+2025-11-17 20:08:21,620 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:21,621 - INFO - Using tail-chase strategy
+2025-11-17 20:08:21,653 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:21,654 - INFO - Using tail-chase strategy
+2025-11-17 20:08:21,686 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:21,687 - INFO - Using tail-chase strategy
+2025-11-17 20:08:21,721 - INFO - ASTAR found path: length=17, nodes_expanded=48
+2025-11-17 20:08:21,754 - INFO - ASTAR found path: length=16, nodes_expanded=48
+2025-11-17 20:08:21,787 - INFO - ASTAR found path: length=15, nodes_expanded=52
+2025-11-17 20:08:21,821 - INFO - ASTAR found path: length=14, nodes_expanded=46
+2025-11-17 20:08:21,855 - INFO - ASTAR found path: length=13, nodes_expanded=40
+2025-11-17 20:08:21,889 - INFO - ASTAR found path: length=12, nodes_expanded=37
+2025-11-17 20:08:21,922 - INFO - ASTAR found path: length=11, nodes_expanded=32
+2025-11-17 20:08:21,956 - INFO - ASTAR found path: length=10, nodes_expanded=27
+2025-11-17 20:08:21,989 - INFO - ASTAR found path: length=9, nodes_expanded=24
+2025-11-17 20:08:22,023 - INFO - ASTAR found path: length=8, nodes_expanded=18
+2025-11-17 20:08:22,055 - INFO - ASTAR found path: length=7, nodes_expanded=12
+2025-11-17 20:08:22,089 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:22,123 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:22,155 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:22,189 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:22,222 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:22,258 - INFO - ASTAR found path: length=16, nodes_expanded=76
+2025-11-17 20:08:22,290 - INFO - ASTAR found path: length=13, nodes_expanded=43
+2025-11-17 20:08:22,324 - INFO - ASTAR found path: length=10, nodes_expanded=24
+2025-11-17 20:08:22,358 - INFO - ASTAR found path: length=7, nodes_expanded=10
+2025-11-17 20:08:22,392 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:22,424 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:22,459 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:22,494 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:22,529 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:22,562 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:22,596 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:22,629 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:22,663 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:22,697 - INFO - ASTAR found path: length=18, nodes_expanded=38
+2025-11-17 20:08:22,730 - INFO - ASTAR found path: length=17, nodes_expanded=39
+2025-11-17 20:08:22,764 - INFO - ASTAR found path: length=16, nodes_expanded=39
+2025-11-17 20:08:22,798 - INFO - ASTAR found path: length=15, nodes_expanded=36
+2025-11-17 20:08:22,831 - INFO - ASTAR found path: length=14, nodes_expanded=32
+2025-11-17 20:08:22,864 - INFO - ASTAR found path: length=13, nodes_expanded=28
+2025-11-17 20:08:22,897 - INFO - ASTAR found path: length=12, nodes_expanded=24
+2025-11-17 20:08:22,930 - INFO - ASTAR found path: length=11, nodes_expanded=20
+2025-11-17 20:08:22,964 - INFO - ASTAR found path: length=10, nodes_expanded=16
+2025-11-17 20:08:22,996 - INFO - ASTAR found path: length=9, nodes_expanded=15
+2025-11-17 20:08:23,029 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:08:23,062 - INFO - ASTAR found path: length=7, nodes_expanded=12
+2025-11-17 20:08:23,095 - INFO - ASTAR found path: length=6, nodes_expanded=10
+2025-11-17 20:08:23,129 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:23,163 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:08:23,196 - INFO - ASTAR found path: length=3, nodes_expanded=4
+2025-11-17 20:08:23,230 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:23,262 - INFO - ASTAR found path: length=13, nodes_expanded=40
+2025-11-17 20:08:23,296 - INFO - ASTAR found path: length=12, nodes_expanded=36
+2025-11-17 20:08:23,329 - INFO - ASTAR found path: length=11, nodes_expanded=32
+2025-11-17 20:08:23,363 - INFO - ASTAR found path: length=10, nodes_expanded=28
+2025-11-17 20:08:23,398 - INFO - ASTAR found path: length=9, nodes_expanded=24
+2025-11-17 20:08:23,431 - INFO - ASTAR found path: length=8, nodes_expanded=20
+2025-11-17 20:08:23,464 - INFO - ASTAR found path: length=7, nodes_expanded=16
+2025-11-17 20:08:23,499 - INFO - ASTAR found path: length=6, nodes_expanded=12
+2025-11-17 20:08:23,533 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:23,567 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:23,600 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:23,634 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:23,668 - INFO - ASTAR found path: length=22, nodes_expanded=64
+2025-11-17 20:08:23,702 - INFO - ASTAR found path: length=21, nodes_expanded=63
+2025-11-17 20:08:23,736 - INFO - ASTAR found path: length=20, nodes_expanded=60
+2025-11-17 20:08:23,772 - INFO - ASTAR found path: length=19, nodes_expanded=57
+2025-11-17 20:08:23,803 - INFO - ASTAR found path: length=18, nodes_expanded=54
+2025-11-17 20:08:23,836 - INFO - ASTAR found path: length=17, nodes_expanded=51
+2025-11-17 20:08:23,870 - INFO - ASTAR found path: length=16, nodes_expanded=48
+2025-11-17 20:08:23,903 - INFO - ASTAR found path: length=15, nodes_expanded=45
+2025-11-17 20:08:23,936 - INFO - ASTAR found path: length=14, nodes_expanded=42
+2025-11-17 20:08:23,971 - INFO - ASTAR found path: length=13, nodes_expanded=39
+2025-11-17 20:08:24,004 - INFO - ASTAR found path: length=12, nodes_expanded=36
+2025-11-17 20:08:24,038 - INFO - ASTAR found path: length=11, nodes_expanded=27
+2025-11-17 20:08:24,071 - INFO - ASTAR found path: length=10, nodes_expanded=18
+2025-11-17 20:08:24,105 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:08:24,139 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:08:24,173 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:24,207 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:24,241 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:24,275 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:24,308 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:24,342 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:24,375 - INFO - ASTAR found path: length=12, nodes_expanded=21
+2025-11-17 20:08:24,409 - INFO - ASTAR found path: length=11, nodes_expanded=11
+2025-11-17 20:08:24,443 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:08:24,476 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:08:24,511 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:08:24,544 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:24,578 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:24,611 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:24,644 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:24,678 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:24,712 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:24,746 - INFO - ASTAR found path: length=36, nodes_expanded=134
+2025-11-17 20:08:24,781 - INFO - ASTAR found path: length=35, nodes_expanded=131
+2025-11-17 20:08:24,815 - INFO - ASTAR found path: length=34, nodes_expanded=127
+2025-11-17 20:08:24,850 - INFO - ASTAR found path: length=33, nodes_expanded=123
+2025-11-17 20:08:24,882 - INFO - ASTAR found path: length=32, nodes_expanded=119
+2025-11-17 20:08:24,915 - INFO - ASTAR found path: length=31, nodes_expanded=115
+2025-11-17 20:08:24,950 - INFO - ASTAR found path: length=30, nodes_expanded=111
+2025-11-17 20:08:24,984 - INFO - ASTAR found path: length=29, nodes_expanded=107
+2025-11-17 20:08:25,017 - INFO - ASTAR found path: length=28, nodes_expanded=103
+2025-11-17 20:08:25,051 - INFO - ASTAR found path: length=27, nodes_expanded=99
+2025-11-17 20:08:25,085 - INFO - ASTAR found path: length=26, nodes_expanded=95
+2025-11-17 20:08:25,119 - INFO - ASTAR found path: length=25, nodes_expanded=94
+2025-11-17 20:08:25,152 - INFO - ASTAR found path: length=22, nodes_expanded=66
+2025-11-17 20:08:25,185 - INFO - ASTAR found path: length=19, nodes_expanded=42
+2025-11-17 20:08:25,218 - INFO - ASTAR found path: length=16, nodes_expanded=22
+2025-11-17 20:08:25,250 - INFO - ASTAR found path: length=15, nodes_expanded=15
+2025-11-17 20:08:25,283 - INFO - ASTAR found path: length=14, nodes_expanded=14
+2025-11-17 20:08:25,316 - INFO - ASTAR found path: length=13, nodes_expanded=13
+2025-11-17 20:08:25,350 - INFO - ASTAR found path: length=12, nodes_expanded=12
+2025-11-17 20:08:25,383 - INFO - ASTAR found path: length=11, nodes_expanded=11
+2025-11-17 20:08:25,416 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:08:25,450 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:08:25,484 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:08:25,517 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:25,551 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:25,585 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:25,619 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:25,653 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:25,687 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:25,721 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:25,755 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:08:25,789 - INFO - ASTAR found path: length=3, nodes_expanded=4
+2025-11-17 20:08:25,822 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:25,855 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:25,889 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:25,922 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:25,955 - INFO - ASTAR found path: length=18, nodes_expanded=33
+2025-11-17 20:08:25,989 - INFO - ASTAR found path: length=17, nodes_expanded=32
+2025-11-17 20:08:26,022 - INFO - ASTAR found path: length=16, nodes_expanded=30
+2025-11-17 20:08:26,056 - INFO - ASTAR found path: length=15, nodes_expanded=28
+2025-11-17 20:08:26,089 - INFO - ASTAR found path: length=14, nodes_expanded=26
+2025-11-17 20:08:26,123 - INFO - ASTAR found path: length=13, nodes_expanded=24
+2025-11-17 20:08:26,155 - INFO - ASTAR found path: length=12, nodes_expanded=22
+2025-11-17 20:08:26,189 - INFO - ASTAR found path: length=11, nodes_expanded=20
+2025-11-17 20:08:26,223 - INFO - ASTAR found path: length=10, nodes_expanded=18
+2025-11-17 20:08:26,257 - INFO - ASTAR found path: length=9, nodes_expanded=16
+2025-11-17 20:08:26,290 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:08:26,324 - INFO - ASTAR found path: length=7, nodes_expanded=12
+2025-11-17 20:08:26,357 - INFO - ASTAR found path: length=6, nodes_expanded=10
+2025-11-17 20:08:26,390 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:26,423 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:08:26,456 - INFO - ASTAR found path: length=3, nodes_expanded=4
+2025-11-17 20:08:26,490 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:26,524 - INFO - ASTAR found path: length=24, nodes_expanded=142
+2025-11-17 20:08:26,558 - INFO - ASTAR found path: length=23, nodes_expanded=137
+2025-11-17 20:08:26,592 - INFO - ASTAR found path: length=22, nodes_expanded=132
+2025-11-17 20:08:26,625 - INFO - ASTAR found path: length=21, nodes_expanded=121
+2025-11-17 20:08:26,659 - INFO - ASTAR found path: length=20, nodes_expanded=110
+2025-11-17 20:08:26,692 - INFO - ASTAR found path: length=19, nodes_expanded=99
+2025-11-17 20:08:26,725 - INFO - ASTAR found path: length=18, nodes_expanded=88
+2025-11-17 20:08:26,758 - INFO - ASTAR found path: length=17, nodes_expanded=77
+2025-11-17 20:08:26,792 - INFO - ASTAR found path: length=16, nodes_expanded=66
+2025-11-17 20:08:26,826 - INFO - ASTAR found path: length=15, nodes_expanded=55
+2025-11-17 20:08:26,859 - INFO - ASTAR found path: length=14, nodes_expanded=44
+2025-11-17 20:08:26,892 - INFO - ASTAR found path: length=13, nodes_expanded=33
+2025-11-17 20:08:26,925 - INFO - ASTAR found path: length=12, nodes_expanded=22
+2025-11-17 20:08:26,959 - INFO - ASTAR found path: length=11, nodes_expanded=11
+2025-11-17 20:08:26,993 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:08:27,026 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:08:27,060 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:08:27,093 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:27,127 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:27,161 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:27,195 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:27,228 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:27,261 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:27,296 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,296 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,329 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,330 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,362 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,363 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,396 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,397 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,430 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,430 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,464 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,464 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,497 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,497 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,530 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,530 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,564 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,564 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,598 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,598 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,631 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,631 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,664 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,665 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,698 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,698 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,732 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,732 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,765 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,765 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,799 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,799 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,832 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,832 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,865 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,866 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,899 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,899 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,932 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,932 - INFO - Using tail-chase strategy
+2025-11-17 20:08:27,966 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:27,966 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,000 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,000 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,033 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,033 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,066 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,067 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,099 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,100 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,134 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,134 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,167 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,167 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,201 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,201 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,235 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,235 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,268 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,269 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,302 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,302 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,337 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,337 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,370 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,370 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,404 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,405 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,437 - INFO - ASTAR found path: length=5, nodes_expanded=7
+2025-11-17 20:08:28,471 - INFO - ASTAR found path: length=4, nodes_expanded=5
+2025-11-17 20:08:28,505 - INFO - ASTAR found path: length=3, nodes_expanded=4
+2025-11-17 20:08:28,539 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:28,573 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,573 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,606 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,606 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,639 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,639 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,673 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,673 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,706 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,707 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,741 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,741 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,774 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,775 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,808 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,809 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,842 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,843 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,876 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,877 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,910 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,911 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,943 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,944 - INFO - Using tail-chase strategy
+2025-11-17 20:08:28,976 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:28,976 - INFO - Using tail-chase strategy
+2025-11-17 20:08:29,010 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:29,011 - INFO - Using tail-chase strategy
+2025-11-17 20:08:29,044 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:29,045 - INFO - Using tail-chase strategy
+2025-11-17 20:08:29,079 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:29,079 - INFO - Using tail-chase strategy
+2025-11-17 20:08:29,112 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:29,112 - INFO - Using tail-chase strategy
+2025-11-17 20:08:29,146 - INFO - ASTAR found path: length=13, nodes_expanded=34
+2025-11-17 20:08:29,179 - INFO - ASTAR found path: length=12, nodes_expanded=34
+2025-11-17 20:08:29,213 - INFO - ASTAR found path: length=11, nodes_expanded=30
+2025-11-17 20:08:29,246 - INFO - ASTAR found path: length=10, nodes_expanded=26
+2025-11-17 20:08:29,280 - INFO - ASTAR found path: length=9, nodes_expanded=22
+2025-11-17 20:08:29,314 - INFO - ASTAR found path: length=8, nodes_expanded=18
+2025-11-17 20:08:29,347 - INFO - ASTAR found path: length=7, nodes_expanded=14
+2025-11-17 20:08:29,382 - INFO - ASTAR found path: length=6, nodes_expanded=10
+2025-11-17 20:08:29,415 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:29,447 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:29,482 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:29,516 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:29,550 - INFO - ASTAR found path: length=9, nodes_expanded=24
+2025-11-17 20:08:29,583 - INFO - ASTAR found path: length=8, nodes_expanded=18
+2025-11-17 20:08:29,617 - INFO - ASTAR found path: length=7, nodes_expanded=12
+2025-11-17 20:08:29,651 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:29,683 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:29,717 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:29,751 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:29,785 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:29,818 - INFO - ASTAR found path: length=7, nodes_expanded=13
+2025-11-17 20:08:29,851 - INFO - ASTAR found path: length=6, nodes_expanded=12
+2025-11-17 20:08:29,884 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:29,918 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:29,951 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:29,985 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:30,018 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:30,052 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:30,084 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:30,119 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:30,153 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:30,187 - INFO - ASTAR found path: length=8, nodes_expanded=17
+2025-11-17 20:08:30,219 - INFO - ASTAR found path: length=7, nodes_expanded=16
+2025-11-17 20:08:30,253 - INFO - ASTAR found path: length=6, nodes_expanded=12
+2025-11-17 20:08:30,287 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:30,321 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:30,355 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:30,389 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:30,422 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:08:30,456 - INFO - ASTAR found path: length=3, nodes_expanded=4
+2025-11-17 20:08:30,489 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:30,523 - INFO - ASTAR found path: length=13, nodes_expanded=49
+2025-11-17 20:08:30,556 - INFO - ASTAR found path: length=12, nodes_expanded=42
+2025-11-17 20:08:30,590 - INFO - ASTAR found path: length=11, nodes_expanded=35
+2025-11-17 20:08:30,623 - INFO - ASTAR found path: length=10, nodes_expanded=28
+2025-11-17 20:08:30,656 - INFO - ASTAR found path: length=9, nodes_expanded=21
+2025-11-17 20:08:30,690 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:08:30,723 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:30,757 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:30,790 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:30,823 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:30,856 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:30,890 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:30,924 - INFO - ASTAR found path: length=24, nodes_expanded=111
+2025-11-17 20:08:30,956 - INFO - ASTAR found path: length=23, nodes_expanded=110
+2025-11-17 20:08:30,990 - INFO - ASTAR found path: length=22, nodes_expanded=104
+2025-11-17 20:08:31,023 - INFO - ASTAR found path: length=21, nodes_expanded=98
+2025-11-17 20:08:31,057 - INFO - ASTAR found path: length=20, nodes_expanded=92
+2025-11-17 20:08:31,090 - INFO - ASTAR found path: length=19, nodes_expanded=86
+2025-11-17 20:08:31,124 - INFO - ASTAR found path: length=18, nodes_expanded=80
+2025-11-17 20:08:31,157 - INFO - ASTAR found path: length=17, nodes_expanded=74
+2025-11-17 20:08:31,190 - INFO - ASTAR found path: length=16, nodes_expanded=67
+2025-11-17 20:08:31,224 - INFO - ASTAR found path: length=15, nodes_expanded=60
+2025-11-17 20:08:31,257 - INFO - ASTAR found path: length=14, nodes_expanded=50
+2025-11-17 20:08:31,291 - INFO - ASTAR found path: length=13, nodes_expanded=40
+2025-11-17 20:08:31,325 - INFO - ASTAR found path: length=12, nodes_expanded=30
+2025-11-17 20:08:31,359 - INFO - ASTAR found path: length=11, nodes_expanded=20
+2025-11-17 20:08:31,392 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:08:31,426 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:08:31,460 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:08:31,493 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:31,527 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:31,561 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:31,594 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:31,628 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:31,662 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:31,696 - INFO - ASTAR found path: length=17, nodes_expanded=63
+2025-11-17 20:08:31,730 - INFO - ASTAR found path: length=16, nodes_expanded=62
+2025-11-17 20:08:31,763 - INFO - ASTAR found path: length=15, nodes_expanded=53
+2025-11-17 20:08:31,796 - INFO - ASTAR found path: length=14, nodes_expanded=44
+2025-11-17 20:08:31,829 - INFO - ASTAR found path: length=13, nodes_expanded=35
+2025-11-17 20:08:31,863 - INFO - ASTAR found path: length=12, nodes_expanded=26
+2025-11-17 20:08:31,897 - INFO - ASTAR found path: length=11, nodes_expanded=25
+2025-11-17 20:08:31,931 - INFO - ASTAR found path: length=10, nodes_expanded=24
+2025-11-17 20:08:31,964 - INFO - ASTAR found path: length=9, nodes_expanded=23
+2025-11-17 20:08:31,998 - INFO - ASTAR found path: length=8, nodes_expanded=17
+2025-11-17 20:08:32,032 - INFO - ASTAR found path: length=7, nodes_expanded=11
+2025-11-17 20:08:32,065 - INFO - ASTAR found path: length=6, nodes_expanded=10
+2025-11-17 20:08:32,099 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:32,132 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:32,166 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:32,200 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:32,234 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,235 - INFO - Using safe move fallback
+2025-11-17 20:08:32,267 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,268 - INFO - Using safe move fallback
+2025-11-17 20:08:32,302 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,302 - INFO - Using safe move fallback
+2025-11-17 20:08:32,334 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,335 - INFO - Using safe move fallback
+2025-11-17 20:08:32,368 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,368 - INFO - Using safe move fallback
+2025-11-17 20:08:32,401 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,402 - INFO - Using safe move fallback
+2025-11-17 20:08:32,434 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,434 - INFO - Using safe move fallback
+2025-11-17 20:08:32,468 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,468 - INFO - Using safe move fallback
+2025-11-17 20:08:32,501 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,501 - INFO - Using safe move fallback
+2025-11-17 20:08:32,535 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,535 - INFO - Using safe move fallback
+2025-11-17 20:08:32,569 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,569 - INFO - Using safe move fallback
+2025-11-17 20:08:32,603 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,603 - INFO - Using safe move fallback
+2025-11-17 20:08:32,637 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,637 - INFO - Using safe move fallback
+2025-11-17 20:08:32,671 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,671 - INFO - Using safe move fallback
+2025-11-17 20:08:32,705 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,705 - INFO - Using safe move fallback
+2025-11-17 20:08:32,738 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,739 - INFO - Using safe move fallback
+2025-11-17 20:08:32,772 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,772 - INFO - Using safe move fallback
+2025-11-17 20:08:32,806 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,806 - INFO - Using safe move fallback
+2025-11-17 20:08:32,840 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,840 - INFO - Using safe move fallback
+2025-11-17 20:08:32,874 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,874 - INFO - Using safe move fallback
+2025-11-17 20:08:32,907 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,907 - INFO - Using safe move fallback
+2025-11-17 20:08:32,941 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,942 - INFO - Using safe move fallback
+2025-11-17 20:08:32,975 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:32,976 - INFO - Using safe move fallback
+2025-11-17 20:08:33,009 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:33,009 - INFO - Using safe move fallback
+2025-11-17 20:08:33,043 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:33,043 - INFO - Using safe move fallback
+2025-11-17 20:08:33,077 - WARNING - No path found to food, using fallback
+2025-11-17 20:08:33,077 - WARNING - No safe moves available!
+2025-11-17 20:08:35,896 - INFO - ASTAR found path: length=11, nodes_expanded=35
+2025-11-17 20:08:35,929 - INFO - ASTAR found path: length=10, nodes_expanded=30
+2025-11-17 20:08:35,961 - INFO - ASTAR found path: length=9, nodes_expanded=25
+2025-11-17 20:08:35,994 - INFO - ASTAR found path: length=8, nodes_expanded=20
+2025-11-17 20:08:36,029 - INFO - ASTAR found path: length=7, nodes_expanded=15
+2025-11-17 20:08:36,062 - INFO - ASTAR found path: length=6, nodes_expanded=10
+2025-11-17 20:08:36,095 - INFO - ASTAR found path: length=5, nodes_expanded=5
+2025-11-17 20:08:36,129 - INFO - ASTAR found path: length=4, nodes_expanded=4
+2025-11-17 20:08:36,162 - INFO - ASTAR found path: length=3, nodes_expanded=3
+2025-11-17 20:08:36,196 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:36,229 - INFO - ASTAR found path: length=13, nodes_expanded=24
+2025-11-17 20:08:36,263 - INFO - ASTAR found path: length=12, nodes_expanded=22
+2025-11-17 20:08:36,297 - INFO - ASTAR found path: length=11, nodes_expanded=20
+2025-11-17 20:08:36,332 - INFO - ASTAR found path: length=10, nodes_expanded=18
+2025-11-17 20:08:36,366 - INFO - ASTAR found path: length=9, nodes_expanded=16
+2025-11-17 20:08:36,402 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:08:36,434 - INFO - ASTAR found path: length=7, nodes_expanded=12
+2025-11-17 20:08:36,470 - INFO - ASTAR found path: length=6, nodes_expanded=10
+2025-11-17 20:08:36,503 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:36,534 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:08:36,568 - INFO - ASTAR found path: length=3, nodes_expanded=4
+2025-11-17 20:08:36,602 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:36,635 - INFO - ASTAR found path: length=10, nodes_expanded=16
+2025-11-17 20:08:36,671 - INFO - ASTAR found path: length=9, nodes_expanded=16
+2025-11-17 20:08:36,704 - INFO - ASTAR found path: length=8, nodes_expanded=14
+2025-11-17 20:08:36,737 - INFO - ASTAR found path: length=7, nodes_expanded=12
+2025-11-17 20:08:36,771 - INFO - ASTAR found path: length=6, nodes_expanded=10
+2025-11-17 20:08:36,805 - INFO - ASTAR found path: length=5, nodes_expanded=8
+2025-11-17 20:08:36,839 - INFO - ASTAR found path: length=4, nodes_expanded=6
+2025-11-17 20:08:36,873 - INFO - ASTAR found path: length=3, nodes_expanded=4
+2025-11-17 20:08:36,906 - INFO - ASTAR found path: length=2, nodes_expanded=2
+2025-11-17 20:08:36,940 - INFO - ASTAR found path: length=19, nodes_expanded=96
+2025-11-17 20:08:36,974 - INFO - ASTAR found path: length=18, nodes_expanded=84
+2025-11-17 20:08:37,008 - INFO - ASTAR found path: length=17, nodes_expanded=72
+2025-11-17 20:08:37,041 - INFO - ASTAR found path: length=16, nodes_expanded=60
+2025-11-17 20:08:37,074 - INFO - ASTAR found path: length=15, nodes_expanded=48
+2025-11-17 20:08:37,107 - INFO - ASTAR found path: length=14, nodes_expanded=36
+2025-11-17 20:08:37,141 - INFO - ASTAR found path: length=13, nodes_expanded=24
+2025-11-17 20:08:37,176 - INFO - ASTAR found path: length=12, nodes_expanded=12
+2025-11-17 20:08:37,209 - INFO - ASTAR found path: length=11, nodes_expanded=11
+2025-11-17 20:08:37,243 - INFO - ASTAR found path: length=10, nodes_expanded=10
+2025-11-17 20:08:37,277 - INFO - ASTAR found path: length=9, nodes_expanded=9
+2025-11-17 20:08:37,312 - INFO - ASTAR found path: length=8, nodes_expanded=8
+2025-11-17 20:08:37,343 - INFO - ASTAR found path: length=7, nodes_expanded=7
+2025-11-17 20:08:37,409 - INFO - ASTAR found path: length=6, nodes_expanded=6
+2025-11-17 20:08:37,413 - INFO - Game ended - Score: 3, Moves: 45, Mode: ai
