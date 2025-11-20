@@ -6,8 +6,25 @@ CHANGELOG: Added Hamiltonian fallback and survival strategies
 import logging
 from snake_game.search import astar_search, bfs_search, simulate_snake_movement
 from snake_game.config import config
-from snake_game.utils import get_neighbors, manhattan_distance
 
+
+def get_neighbors(pos, grid_rows, grid_cols):
+    """Get valid neighboring positions"""
+    x, y = pos
+    neighbors = []
+    directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
+    
+    for dx, dy in directions:
+        new_pos = (x + dx, y + dy)
+        if 0 <= new_pos[0] < grid_cols and 0 <= new_pos[1] < grid_rows:
+            neighbors.append(new_pos)
+    
+    return neighbors
+
+
+def manhattan_distance(pos1, pos2):
+    """Calculate Manhattan distance"""
+    return abs(pos1[0] - pos2[0]) + abs(pos1[1] - pos2[1])
 
 class SnakeAIAgent:
     """AI agent with survival mode for high scores"""
