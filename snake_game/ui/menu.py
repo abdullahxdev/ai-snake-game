@@ -1,543 +1,327 @@
 """
-Main menu and settings screens
+Main Game Controller - COMPLETELY UPDATED
+Now includes menu system, multiple AI modes, and improved game flow
+CHANGELOG: Complete rewrite with menu integration, theme system, audio
 """
 import pygame
-import random
-import math
-from snake_game.ui.button import Button, Slider, Toggle
-from snake_game.themes import get_theme
+import sys
+import time
+from snake_game.game import SnakeGame
+from snake_game.renderer import GameRenderer
+from snake_game.agent import SnakeAIAgent
+from snake_game.agent_bfs import BFSAgent
+from snake_game.agent_alphabeta import AlphaBetaAgent
+from snake_game.config import config
+from snake_game.audio import AudioManager
+from snake_game.ui.menu import MainMenu, SettingsMenu, ModeMenu
+from snake_game.utils import setup_logging
 
 
-class GhostSnake:
-    """Animated background snake for menu"""
+class GameController:
+    """Main game controller with menu system"""
     
-    def __init__(self, x, y, length, speed, color, grid_rows, grid_cols):
-        """Initialize ghost snake"""
-        self.body = [(x, y)]
-        self.target_length = length
-        self.speed = speed
-        self.color = color
-        self.direction = random.choice([(1, 0), (-1, 0), (0, 1), (0, -1)])
-        self.grid_rows = grid_rows
-        self.grid_cols = grid_cols
-        self.move_timer = 0
-        
-        # Grow to target length
-        for _ in range(length - 1):
-            self.body.append(self.body[-1])
-    
-    def update(self, dt):
-        """Update ghost snake position"""
-        self.move_timer += dt
-        
-        if self.move_timer >= self.speed:
-            self.move_timer = 0
-            
-            # Randomly change direction
-            if random.random() < 0.1:
-                self.direction = random.choice([(1, 0), (-1, 0), (0, 1), (0, -1)])
-            
-            # Calculate new head position
-            head = self.body[0]
-            new_head = (
-                (head[0] + self.direction[0]) % self.grid_cols,
-                (head[1] + self.direction[1]) % self.grid_rows
-            )
-            
-            # Move
-            self.body.insert(0, new_head)
-            if len(self.body) > self.target_length:
-                self.body.pop()
-    
-    def draw(self, surface, cell_size, offset_x, offset_y, alpha=100):
-        """Draw ghost snake with transparency"""
-        for i, (x, y) in enumerate(self.body):
-            # Create semi-transparent surface
-            segment_surface = pygame.Surface((cell_size - 4, cell_size - 4))
-            segment_surface.set_alpha(alpha)
-            segment_surface.fill(self.color)
-            
-            pos = (x * cell_size + offset_x + 2, y * cell_size + offset_y + 2)
-            surface.blit(segment_surface, pos)
-
-
-class MainMenu:
-    """Main menu screen with animated background"""
-    
-    def __init__(self, width, height, config, audio_manager):
+    def __init__(self, headless=False):
         """
-        Initialize main menu
+        Initialize game controller
         
         Args:
-            width: Screen width
-            height: Screen height
-            config: ConfigManager instance
-            audio_manager: AudioManager instance
+            headless: Run without GUI for benchmarking
         """
-        self.width = width
-        self.height = height
-        self.config = config
-        self.audio = audio_manager
+        self.headless = headless or config.get('performance', 'headless_mode')
         
-        # Get theme
-        theme_name = config.get('visual', 'default_theme')
-        self.theme = get_theme(theme_name)
+        # Initialize components
+        self.game = SnakeGame()
+        self.renderer = GameRenderer() if not self.headless else None
+        self.audio = AudioManager(
+            enabled=config.get('audio', 'enabled'),
+            volume=config.get('audio', 'volume')
+        )
         
-        # Calculate grid for background
-        self.cell_size = 30
-        self.grid_cols = width // self.cell_size
-        self.grid_rows = height // self.cell_size
+        # Game state
+        self.mode = config.get('ai', 'default_mode')
+        self.algorithm = config.get('ai', 'default_mode') if self.mode != 'human' else 'astar'
+        self.fps = config.get('game', 'default_fps')
+        self.paused = False
+        self.clock = pygame.time.Clock()
         
-        # Create ghost snakes
-        self.ghost_snakes = []
-        num_ghosts = config.get('menu', 'ghost_snakes')
-        colors = [
-            self.theme['snake_body_start'],
-            self.theme['snake_body_end'],
-            self.theme['visited'],
-            self.theme['frontier']
-        ]
+        # AI agent
+        self.agent = None
+        if self.mode != 'human':
+            self._create_agent()
         
-        for i in range(num_ghosts):
-            x = random.randint(0, self.grid_cols - 1)
-            y = random.randint(0, self.grid_rows - 1)
-            length = random.randint(10, 20)
-            speed = random.uniform(0.1, 0.3)
-            color = colors[i % len(colors)]
+        # Menu system
+        window_width = config.get('window', 'width')
+        window_height = config.get('window', 'height')
+        
+        self.main_menu = MainMenu(window_width, window_height, config, self.audio)
+        self.settings_menu = SettingsMenu(window_width, window_height, config, self.audio)
+        self.mode_menu = ModeMenu(window_width, window_height, config, self.audio)
+        
+        # State management
+        self.state = 'menu'  # 'menu', 'game', 'settings', 'mode_select'
+        self.transition_alpha = 0
+        self.transitioning = False
+        
+        # Setup logging
+        self.logger = setup_logging()
+        
+        if self.logger:
+            self.logger.info("Game controller initialized")
+    
+    def _create_agent(self):
+        """Create AI agent based on current mode"""
+        if self.mode == 'human':
+            self.agent = None
+        elif self.mode == 'bfs':
+            self.agent = BFSAgent(self.game)
+        elif self.mode == 'alphabeta':
+            depth = config.get('ai', 'alphabeta_depth')
+            self.agent = AlphaBetaAgent(self.game, max_depth=depth)
+        else:  # astar
+            heuristic = config.get('ai', 'heuristic')
+            self.agent = SnakeAIAgent(self.game, 'astar', heuristic)
+    
+    def run(self):
+        """Main game loop"""
+        if self.logger:
+            self.logger.info("Game started")
+        
+        running = True
+        last_time = time.time()
+        
+        while running:
+            # Calculate delta time
+            current_time = time.time()
+            dt = current_time - last_time
+            last_time = current_time
             
-            ghost = GhostSnake(x, y, length, speed, color, self.grid_rows, self.grid_cols)
-            self.ghost_snakes.append(ghost)
-        
-        # Gradient animation
-        self.gradient_offset = 0
-        
-        # Create buttons
-        button_width = 300
-        button_height = 60
-        button_x = (width - button_width) // 2
-        start_y = height // 2 - 50
-        spacing = 80
-        
-        self.buttons = []
-        
-        self.play_button = Button(
-            button_x, start_y, button_width, button_height,
-            "PLAY", self.theme, on_click=self.on_play
-        )
-        self.buttons.append(self.play_button)
-        
-        self.settings_button = Button(
-            button_x, start_y + spacing, button_width, button_height,
-            "SETTINGS", self.theme, on_click=self.on_settings
-        )
-        self.buttons.append(self.settings_button)
-        
-        self.mode_button = Button(
-            button_x, start_y + spacing * 2, button_width, button_height,
-            "MODE", self.theme, on_click=self.on_mode
-        )
-        self.buttons.append(self.mode_button)
-        
-        self.quit_button = Button(
-            button_x, start_y + spacing * 3, button_width, button_height,
-            "QUIT", self.theme, on_click=self.on_quit
-        )
-        self.buttons.append(self.quit_button)
-        
-        # Title font
-        self.title_font = pygame.font.Font(None, 100)
-        self.subtitle_font = pygame.font.Font(None, 36)
-        
-        # Menu state
-        self.action = None
-    
-    def on_play(self):
-        """Play button clicked"""
-        self.audio.play('click')
-        self.action = 'play'
-    
-    def on_settings(self):
-        """Settings button clicked"""
-        self.audio.play('click')
-        self.action = 'settings'
-    
-    def on_mode(self):
-        """Mode button clicked"""
-        self.audio.play('click')
-        self.action = 'mode'
-    
-    def on_quit(self):
-        """Quit button clicked"""
-        self.audio.play('click')
-        self.action = 'quit'
-    
-    def handle_event(self, event):
-        """Handle input events"""
-        for button in self.buttons:
-            if button.handle_event(event):
-                return True
-        return False
-    
-    def update(self, dt):
-        """Update menu animations"""
-        # Update ghost snakes
-        for ghost in self.ghost_snakes:
-            ghost.update(dt)
-        
-        # Update gradient animation
-        self.gradient_offset = (self.gradient_offset + dt * 20) % 360
-    
-    def draw(self, surface):
-        """Draw menu"""
-        # Animated gradient background
-        self._draw_animated_background(surface)
-        
-        # Draw ghost snakes
-        for ghost in self.ghost_snakes:
-            ghost.draw(surface, self.cell_size, 0, 0, alpha=80)
-        
-        # Semi-transparent overlay
-        overlay = pygame.Surface((self.width, self.height))
-        overlay.set_alpha(150)
-        overlay.fill(self.theme['background'])
-        surface.blit(overlay, (0, 0))
-        
-        # Draw title
-        title_text = self.title_font.render("SNAKE AI", True, self.theme['snake_head'])
-        title_shadow = self.title_font.render("SNAKE AI", True, self.theme['text_shadow'])
-        title_rect = title_text.get_rect(center=(self.width // 2, 150))
-        shadow_rect = title_shadow.get_rect(center=(self.width // 2 + 4, 154))
-        
-        surface.blit(title_shadow, shadow_rect)
-        surface.blit(title_text, title_rect)
-        
-        # Draw subtitle
-        subtitle_text = self.subtitle_font.render(
-            "Advanced AI Search Algorithms", True, self.theme['text']
-        )
-        subtitle_rect = subtitle_text.get_rect(center=(self.width // 2, 220))
-        surface.blit(subtitle_text, subtitle_rect)
-        
-        # Draw buttons
-        for button in self.buttons:
-            button.draw(surface)
-    
-    def _draw_animated_background(self, surface):
-        """Draw animated gradient background"""
-        for y in range(self.height):
-            # Calculate color based on y position and animation offset
-            factor = (y / self.height + self.gradient_offset / 360) % 1.0
+            # Handle events
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    running = False
+                else:
+                    if self.state == 'menu':
+                        self.main_menu.handle_event(event)
+                    elif self.state == 'settings':
+                        self.settings_menu.handle_event(event)
+                    elif self.state == 'mode_select':
+                        self.mode_menu.handle_event(event)
+                    elif self.state == 'game':
+                        self._handle_game_event(event)
             
-            # Interpolate between gradient colors
-            color = self._interpolate_color(
-                self.theme['background_gradient_start'],
-                self.theme['background_gradient_end'],
-                factor
-            )
+            # Update based on state
+            if self.state == 'menu':
+                self._update_menu(dt)
+            elif self.state == 'settings':
+                self._update_settings(dt)
+            elif self.state == 'mode_select':
+                self._update_mode_menu(dt)
+            elif self.state == 'game':
+                self._update_game(dt)
             
-            pygame.draw.line(surface, color, (0, y), (self.width, y))
+            # Render based on state
+            if not self.headless and self.renderer:
+                if self.state == 'menu':
+                    self.main_menu.draw(self.renderer.screen)
+                elif self.state == 'settings':
+                    self.settings_menu.draw(self.renderer.screen)
+                elif self.state == 'mode_select':
+                    self.mode_menu.draw(self.renderer.screen)
+                elif self.state == 'game':
+                    self._render_game(dt)
+                
+                pygame.display.flip()
+            
+            # Control frame rate
+            self.clock.tick(60 if self.state != 'game' else self.fps)
+        
+        # Cleanup
+        self._cleanup()
     
-    def _interpolate_color(self, color1, color2, factor):
-        """Interpolate between two colors"""
-        return tuple(
-            int(color1[i] + (color2[i] - color1[i]) * factor)
-            for i in range(3)
-        )
+    def _update_menu(self, dt):
+        """Update main menu"""
+        self.main_menu.update(dt)
+        
+        action = self.main_menu.get_action()
+        if action == 'play':
+            self.audio.play('transition')
+            self._transition_to_game()
+        elif action == 'settings':
+            self.state = 'settings'
+        elif action == 'mode':
+            self.state = 'mode_select'
+        elif action == 'quit':
+            pygame.quit()
+            sys.exit()
     
-    def get_action(self):
-        """Get menu action and reset"""
-        action = self.action
-        self.action = None
-        return action
-    
-    def update_theme(self, theme_name):
-        """Update menu theme"""
-        self.theme = get_theme(theme_name)
-        for button in self.buttons:
-            button.update_theme(self.theme)
-
-
-class SettingsMenu:
-    """Settings menu screen"""
-    
-    def __init__(self, width, height, config, audio_manager):
-        """Initialize settings menu"""
-        self.width = width
-        self.height = height
-        self.config = config
-        self.audio = audio_manager
-        
-        theme_name = config.get('visual', 'default_theme')
-        self.theme = get_theme(theme_name)
-        
-        # Title
-        self.title_font = pygame.font.Font(None, 72)
-        self.font = pygame.font.Font(None, 32)
-        
-        # Controls
-        y_offset = 150
-        x_center = width // 2
-        
-        # Volume slider
-        self.volume_slider = Slider(
-            x_center - 200, y_offset,
-            400, 0, 100,
-            config.get('audio', 'volume'),
-            self.theme, label="Volume"
-        )
-        y_offset += 100
-        
-        # Speed slider
-        self.speed_slider = Slider(
-            x_center - 200, y_offset,
-            400,
-            config.get('game', 'min_fps'),
-            config.get('game', 'max_fps'),
-            config.get('game', 'default_fps'),
-            self.theme, label="Game Speed (FPS)"
-        )
-        y_offset += 100
-        
-        # Sound toggle
-        self.sound_toggle = Toggle(
-            x_center - 30, y_offset,
-            self.theme, label="Sound Effects",
-            initial_state=config.get('audio', 'enabled')
-        )
-        y_offset += 100
-        
-        # Visualization toggle
-        self.viz_toggle = Toggle(
-            x_center - 30, y_offset,
-            self.theme, label="Show AI Visualization",
-            initial_state=config.get('ai', 'show_visualization')
-        )
-        y_offset += 100
-        
-        # Theme buttons
-        self.theme_label_y = y_offset - 30
-        button_y = y_offset + 10
-        button_width = 120
-        button_spacing = 140
-        start_x = x_center - (button_spacing * 2)
-        
-        from snake_game.themes import get_theme_names
-        theme_names = get_theme_names()
-        
-        self.theme_buttons = []
-        for i, theme_name in enumerate(theme_names):
-            btn = Button(
-                start_x + i * button_spacing, button_y,
-                button_width, 50,
-                theme_name.upper(), self.theme,
-                on_click=lambda t=theme_name: self.on_theme_change(t)
-            )
-            self.theme_buttons.append(btn)
-        
-        # Back button
-        self.back_button = Button(
-            x_center - 100, height - 120,
-            200, 60,
-            "BACK", self.theme, on_click=self.on_back
-        )
-        
-        self.action = None
-    
-    def on_theme_change(self, theme_name):
-        """Theme button clicked"""
-        self.audio.play('click')
-        self.config.set('visual', 'default_theme', value=theme_name)
-        self.theme = get_theme(theme_name)
-        self.update_all_themes()
-    
-    def update_all_themes(self):
-        """Update theme for all UI components"""
-        self.volume_slider.update_theme(self.theme)
-        self.speed_slider.update_theme(self.theme)
-        self.sound_toggle.update_theme(self.theme)
-        self.viz_toggle.update_theme(self.theme)
-        self.back_button.update_theme(self.theme)
-        for btn in self.theme_buttons:
-            btn.update_theme(self.theme)
-    
-    def on_back(self):
-        """Back button clicked"""
-        self.audio.play('click')
-        # Save settings
-        self.config.set('audio', 'volume', value=self.volume_slider.get_value())
-        self.config.set('game', 'default_fps', value=self.speed_slider.get_value())
-        self.config.set('audio', 'enabled', value=self.sound_toggle.get_state())
-        self.config.set('ai', 'show_visualization', value=self.viz_toggle.get_state())
-        self.config.save()
-        
-        # Update audio volume
-        self.audio.set_volume(self.volume_slider.get_value())
-        self.audio.enabled = self.sound_toggle.get_state()
-        
-        self.action = 'back'
-    
-    def handle_event(self, event):
-        """Handle input events"""
-        self.volume_slider.handle_event(event)
-        self.speed_slider.handle_event(event)
-        self.sound_toggle.handle_event(event)
-        self.viz_toggle.handle_event(event)
-        self.back_button.handle_event(event)
-        
-        for btn in self.theme_buttons:
-            btn.handle_event(event)
-        
-        return False
-    
-    def update(self, dt):
+    def _update_settings(self, dt):
         """Update settings menu"""
-        pass
-    
-    def draw(self, surface):
-        """Draw settings menu"""
-        surface.fill(self.theme['background'])
+        self.settings_menu.update(dt)
         
-        # Title
-        title_text = self.title_font.render("SETTINGS", True, self.theme['text'])
-        title_rect = title_text.get_rect(center=(self.width // 2, 80))
-        surface.blit(title_text, title_rect)
-        
-        # Draw controls
-        self.volume_slider.draw(surface)
-        self.speed_slider.draw(surface)
-        self.sound_toggle.draw(surface)
-        self.viz_toggle.draw(surface)
-        
-        # Theme label
-        theme_label = self.font.render("Theme:", True, self.theme['text'])
-        surface.blit(theme_label, (self.width // 2 - 200, self.theme_label_y))
-        
-        # Theme buttons
-        for btn in self.theme_buttons:
-            btn.draw(surface)
-        
-        # Back button
-        self.back_button.draw(surface)
-    
-    def get_action(self):
-        """Get action and reset"""
-        action = self.action
-        self.action = None
-        return action
-
-
-class ModeMenu:
-    """Mode selection menu"""
-    
-    def __init__(self, width, height, config, audio_manager):
-        """Initialize mode menu"""
-        self.width = width
-        self.height = height
-        self.config = config
-        self.audio = audio_manager
-        
-        theme_name = config.get('visual', 'default_theme')
-        self.theme = get_theme(theme_name)
-        
-        self.title_font = pygame.font.Font(None, 72)
-        self.desc_font = pygame.font.Font(None, 24)
-        
-        # Mode buttons
-        modes = [
-            ('human', 'HUMAN', 'Play manually with arrow keys'),
-            ('astar', 'A* SEARCH', 'Heuristic-guided optimal pathfinding'),
-            ('bfs', 'BFS', 'Breadth-first shortest path search'),
-            ('alphabeta', 'ALPHA-BETA', 'Minimax with adversarial search')
-        ]
-        
-        button_width = 250
-        button_height = 80
-        spacing = 120
-        start_y = 180
-        x_left = width // 2 - button_width - 20
-        x_right = width // 2 + 20
-        
-        self.mode_buttons = []
-        self.mode_descriptions = {}
-        
-        for i, (mode_id, mode_name, desc) in enumerate(modes):
-            x = x_left if i % 2 == 0 else x_right
-            y = start_y + (i // 2) * spacing
+        action = self.settings_menu.get_action()
+        if action == 'back':
+            # Update renderer theme
+            theme_name = config.get('visual', 'default_theme')
+            if self.renderer:
+                self.renderer.update_theme(theme_name)
+            self.main_menu.update_theme(theme_name)
+            self.mode_menu.update_theme(theme_name)
             
-            btn = Button(
-                x, y, button_width, button_height,
-                mode_name, self.theme,
-                on_click=lambda m=mode_id: self.on_mode_select(m)
+            # Update FPS
+            self.fps = config.get('game', 'default_fps')
+            
+            self.state = 'menu'
+    
+    def _update_mode_menu(self, dt):
+        """Update mode selection menu"""
+        self.mode_menu.update(dt)
+        
+        action = self.mode_menu.get_action()
+        if action == 'back':
+            # Update mode
+            self.mode = config.get('ai', 'default_mode')
+            self.state = 'menu'
+    
+    def _transition_to_game(self):
+        """Transition from menu to game"""
+        self.game.reset()
+        self.mode = config.get('ai', 'default_mode')
+        self._create_agent()
+        self.paused = False
+        self.state = 'game'
+        
+        if self.logger:
+            self.logger.info(f"Starting game in {self.mode} mode")
+    
+    def _handle_game_event(self, event):
+        """Handle game input events"""
+        if event.type == pygame.KEYDOWN:
+            # Game controls
+            if event.key == pygame.K_ESCAPE:
+                self.audio.play('click')
+                self.state = 'menu'
+            
+            elif event.key == pygame.K_SPACE:
+                self.paused = not self.paused
+                self.audio.play('click')
+            
+            elif event.key == pygame.K_r:
+                self.game.reset()
+                self._create_agent()
+                self.audio.play('click')
+            
+            elif event.key == pygame.K_v:
+                if self.renderer:
+                    viz_state = self.renderer.toggle_search_visualization()
+                    self.audio.play('click')
+                    if self.logger:
+                        self.logger.info(f"Visualization: {'ON' if viz_state else 'OFF'}")
+            
+            elif event.key in [pygame.K_PLUS, pygame.K_EQUALS]:
+                self._adjust_speed(1)
+            
+            elif event.key == pygame.K_MINUS:
+                self._adjust_speed(-1)
+            
+            # Human player controls
+            elif self.mode == 'human' and not self.paused:
+                from snake_game.config import config as cfg
+                if event.key == pygame.K_UP:
+                    self.game.change_direction((0, -1))
+                elif event.key == pygame.K_DOWN:
+                    self.game.change_direction((0, 1))
+                elif event.key == pygame.K_LEFT:
+                    self.game.change_direction((-1, 0))
+                elif event.key == pygame.K_RIGHT:
+                    self.game.change_direction((1, 0))
+    
+    def _adjust_speed(self, delta):
+        """Adjust game speed"""
+        min_fps = config.get('game', 'min_fps')
+        max_fps = config.get('game', 'max_fps')
+        self.fps = max(min_fps, min(max_fps, self.fps + delta))
+        self.audio.play('click')
+        
+        if self.logger:
+            self.logger.info(f"Speed adjusted to: {self.fps} FPS")
+    
+    def _update_game(self, dt):
+        """Update game state"""
+        if self.paused:
+            return
+        
+        # AI decision
+        ai_data = None
+        if self.mode != 'human' and not self.game.game_over:
+            direction = self.agent.get_next_move()
+            self.game.change_direction(direction)
+            ai_data = self.agent.get_visualization_data()
+        
+        # Update game
+        if not self.game.game_over:
+            # Store previous score
+            prev_score = self.game.score
+            
+            # Update
+            self.game.update()
+            
+            # Check if food was eaten
+            if self.game.score > prev_score:
+                self.audio.play('eat')
+        
+        return ai_data
+    
+    def _render_game(self, dt):
+        """Render game state"""
+        if self.paused:
+            self.renderer.render_pause_menu(self.fps)
+        else:
+            ai_data = None
+            if self.mode != 'human' and self.agent:
+                ai_data = self.agent.get_visualization_data()
+            
+            self.renderer.render(
+                self.game.get_state(),
+                ai_data=ai_data,
+                mode=self.mode,
+                algorithm=self.algorithm,
+                dt=dt
             )
-            self.mode_buttons.append(btn)
-            self.mode_descriptions[mode_id] = desc
         
-        # Back button
-        self.back_button = Button(
-            width // 2 - 100, height - 120,
-            200, 60,
-            "BACK", self.theme, on_click=self.on_back
-        )
+        # Play game over sound
+        if self.game.game_over and hasattr(self, '_game_over_played'):
+            if not self._game_over_played:
+                self.audio.play('gameover')
+                self._game_over_played = True
+        elif not self.game.game_over:
+            self._game_over_played = False
+    
+    def _cleanup(self):
+        """Cleanup before exit"""
+        if self.logger:
+            final_state = self.game.get_state()
+            self.logger.info(
+                f"Game ended - Score: {final_state['score']}, "
+                f"Moves: {final_state['moves']}, Mode: {self.mode}"
+            )
         
-        self.selected_mode = config.get('ai', 'default_mode')
-        self.action = None
+        config.save()
+        pygame.quit()
+        sys.exit()
+
+
+def main():
+    """Entry point for the game"""
+    import argparse
     
-    def on_mode_select(self, mode):
-        """Mode button clicked"""
-        self.audio.play('click')
-        self.selected_mode = mode
-        self.config.set('ai', 'default_mode', value=mode)
-        self.config.save()
+    parser = argparse.ArgumentParser(description='Snake AI Game')
+    parser.add_argument('--headless', action='store_true', 
+                       help='Run without GUI for benchmarking')
+    args = parser.parse_args()
     
-    def on_back(self):
-        """Back button clicked"""
-        self.audio.play('click')
-        self.action = 'back'
-    
-    def handle_event(self, event):
-        """Handle input events"""
-        for btn in self.mode_buttons:
-            btn.handle_event(event)
-        self.back_button.handle_event(event)
-        return False
-    
-    def update(self, dt):
-        """Update mode menu"""
-        pass
-    
-    def draw(self, surface):
-        """Draw mode menu"""
-        surface.fill(self.theme['background'])
-        
-        # Title
-        title_text = self.title_font.render("SELECT MODE", True, self.theme['text'])
-        title_rect = title_text.get_rect(center=(self.width // 2, 80))
-        surface.blit(title_text, title_rect)
-        
-        # Current mode indicator
-        current_text = self.desc_font.render(
-            f"Current: {self.selected_mode.upper()}", 
-            True, self.theme['snake_head']
-        )
-        current_rect = current_text.get_rect(center=(self.width // 2, 130))
-        surface.blit(current_text, current_rect)
-        
-        # Draw mode buttons
-        for btn in self.mode_buttons:
-            btn.draw(surface)
-        
-        # Back button
-        self.back_button.draw(surface)
-    
-    def get_action(self):
-        """Get action and reset"""
-        action = self.action
-        self.action = None
-        return action
-    
-    def update_theme(self, theme_name):
-        """Update theme"""
-        self.theme = get_theme(theme_name)
-        for btn in self.mode_buttons:
-            btn.update_theme(self.theme)
-        self.back_button.update_theme(self.theme)
+    controller = GameController(headless=args.headless)
+    controller.run()
+
+
+if __name__ == '__main__':
+    main()
