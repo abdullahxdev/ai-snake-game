@@ -4,7 +4,6 @@ Utility functions for the Snake Game
 import os
 import logging
 from datetime import datetime
-from snake_game.config import LOG_DIR, ENABLE_LOGGING
 
 
 def setup_logging(run_id=None):
@@ -17,19 +16,23 @@ def setup_logging(run_id=None):
     Returns:
         Logger instance
     """
-    if not ENABLE_LOGGING:
+    # Import here to avoid circular dependency
+    from snake_game.config import config
+    
+    if not config.get('logging', 'enabled'):
         return None
     
     # Create logs directory if it doesn't exist
-    os.makedirs(LOG_DIR, exist_ok=True)
+    log_dir = config.get('logging', 'log_dir')
+    os.makedirs(log_dir, exist_ok=True)
     
     # Create unique log file
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    log_file = os.path.join(LOG_DIR, f'ai_run_{timestamp}.log')
+    log_file = os.path.join(log_dir, f'ai_run_{timestamp}.log')
     
     # Configure logging
     logging.basicConfig(
-        level=logging.INFO,
+        level=getattr(logging, config.get('logging', 'level')),
         format='%(asctime)s - %(levelname)s - %(message)s',
         handlers=[
             logging.FileHandler(log_file),
@@ -99,12 +102,13 @@ def get_neighbors(pos, grid_rows, grid_cols):
     Returns:
         List of valid neighbor positions
     """
-    from snake_game.config import UP, DOWN, LEFT, RIGHT
-    
     x, y = pos
     neighbors = []
     
-    for dx, dy in [UP, DOWN, LEFT, RIGHT]:
+    # Four directions: up, down, left, right
+    directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
+    
+    for dx, dy in directions:
         new_pos = (x + dx, y + dy)
         if is_valid_position(new_pos, grid_rows, grid_cols):
             neighbors.append(new_pos)
