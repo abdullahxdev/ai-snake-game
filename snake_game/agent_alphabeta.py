@@ -5,7 +5,25 @@ Models "danger zones" as adversary to avoid traps
 """
 import logging
 import math
-from snake_game.utils import get_neighbors, manhattan_distance
+
+
+def get_neighbors(pos, grid_rows, grid_cols):
+    """Get valid neighboring positions"""
+    x, y = pos
+    neighbors = []
+    directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
+    
+    for dx, dy in directions:
+        new_pos = (x + dx, y + dy)
+        if 0 <= new_pos[0] < grid_cols and 0 <= new_pos[1] < grid_rows:
+            neighbors.append(new_pos)
+    
+    return neighbors
+
+
+def manhattan_distance(pos1, pos2):
+    """Calculate Manhattan distance"""
+    return abs(pos1[0] - pos2[0]) + abs(pos1[1] - pos2[1])
 
 
 class AlphaBetaAgent:
@@ -64,19 +82,7 @@ class AlphaBetaAgent:
         return best_move if best_move else self.game.direction
     
     def _minimax(self, state, depth, alpha, beta, maximizing):
-        """
-        Minimax algorithm with alpha-beta pruning
-        
-        Args:
-            state: Game state dict
-            depth: Remaining search depth
-            alpha: Alpha value for pruning
-            beta: Beta value for pruning
-            maximizing: Whether this is a maximizing node
-            
-        Returns:
-            Evaluation score
-        """
+        """Minimax algorithm with alpha-beta pruning"""
         self.nodes_evaluated += 1
         
         # Terminal conditions
@@ -86,7 +92,6 @@ class AlphaBetaAgent:
         head = state['snake'][0]
         
         if maximizing:
-            # Maximize: snake tries to improve position
             max_eval = -math.inf
             
             for neighbor in get_neighbors(head, self.game.grid_rows, self.game.grid_cols):
@@ -97,39 +102,27 @@ class AlphaBetaAgent:
                     alpha = max(alpha, eval_score)
                     
                     if beta <= alpha:
-                        break  # Beta cutoff
+                        break
             
             return max_eval if max_eval != -math.inf else self._evaluate_state(state)
         
         else:
-            # Minimize: "environment" creates danger (e.g., food spawns far, trap opportunities)
             min_eval = math.inf
             
-            # Model "adversary" as making the situation worse
-            # For snake, this means: less free space, food further, closer to death
             for neighbor in get_neighbors(head, self.game.grid_rows, self.game.grid_cols):
                 if self._is_safe_in_state(neighbor, state):
                     new_state = self._simulate_move_from_state(state, neighbor)
-                    # Penalize state by adding danger
                     eval_score = self._minimax(new_state, depth - 1, alpha, beta, True) - 5
                     min_eval = min(min_eval, eval_score)
                     beta = min(beta, eval_score)
                     
                     if beta <= alpha:
-                        break  # Alpha cutoff
+                        break
             
             return min_eval if min_eval != math.inf else self._evaluate_state(state)
     
     def _evaluate_state(self, state):
-        """
-        Heuristic evaluation function for game state
-        
-        Args:
-            state: Game state dict
-            
-        Returns:
-            Evaluation score (higher is better)
-        """
+        """Heuristic evaluation function"""
         if state['game_over']:
             return -10000
         
@@ -137,15 +130,15 @@ class AlphaBetaAgent:
         food = state['food']
         snake_length = len(state['snake'])
         
-        # Distance to food (negative because closer is better)
+        # Distance to food
         food_dist = manhattan_distance(head, food)
         food_score = -food_dist * 10
         
-        # Free space around head (more is better)
+        # Free space around head
         free_space = self._count_free_space(head, state)
         space_score = free_space * 15
         
-        # Distance to tail (further is better, creates escape routes)
+        # Distance to tail
         if len(state['snake']) > 1:
             tail = state['snake'][-1]
             tail_dist = manhattan_distance(head, tail)
@@ -153,7 +146,7 @@ class AlphaBetaAgent:
         else:
             tail_score = 0
         
-        # Center preference (being in center gives more options)
+        # Center preference
         center = (self.game.grid_cols // 2, self.game.grid_rows // 2)
         center_dist = manhattan_distance(head, center)
         center_score = -center_dist * 2
@@ -161,25 +154,12 @@ class AlphaBetaAgent:
         # Length bonus
         length_score = snake_length * 20
         
-        total_score = food_score + space_score + tail_score + center_score + length_score
-        
-        return total_score
+        return food_score + space_score + tail_score + center_score + length_score
     
     def _count_free_space(self, pos, state, max_depth=8):
-        """
-        Count reachable free spaces using flood fill
-        
-        Args:
-            pos: Starting position
-            state: Game state
-            max_depth: Maximum flood fill depth
-            
-        Returns:
-            Count of reachable free cells
-        """
-        visited = set()
+        """Count reachable free spaces using flood fill"""
+        visited = {pos}
         queue = [(pos, 0)]
-        visited.add(pos)
         obstacles = set(state['snake'][1:])
         
         while queue:
@@ -199,11 +179,9 @@ class AlphaBetaAgent:
         """Simulate a move and return new state"""
         new_snake = [next_pos] + self.game.snake[:-1]
         
-        # Check if food eaten
         if next_pos == self.game.food:
-            new_snake = [next_pos] + self.game.snake  # Grow
+            new_snake = [next_pos] + self.game.snake
         
-        # Check game over
         game_over = (
             next_pos in self.game.snake or
             not (0 <= next_pos[0] < self.game.grid_cols and 
@@ -219,36 +197,35 @@ class AlphaBetaAgent:
     def _simulate_move_from_state(self, state, next_pos):
         """Simulate move from existing state"""
         new_snake = [next_pos] + state['snake'][:-1]
-        # Check if food eaten
+        
         if next_pos == state['food']:
-            new_snake = [next_pos] + state['snake']  # Grow
-    
-    # Check game over
+            new_snake = [next_pos] + state['snake']
+        
         game_over = (
             next_pos in state['snake'] or
             not (0 <= next_pos[0] < self.game.grid_cols and 
-             0 <= next_pos[1] < self.game.grid_rows)
+                 0 <= next_pos[1] < self.game.grid_rows)
         )
-    
+        
         return {
             'snake': new_snake,
             'food': state['food'],
             'game_over': game_over
         }
-
-def _is_safe_in_state(self, pos, state):
-    """Check if position is safe in given state"""
-    x, y = pos
-    if not (0 <= x < self.game.grid_cols and 0 <= y < self.game.grid_rows):
-        return False
-    if pos in state['snake'][1:]:
-        return False
-    return True
-
-def get_visualization_data(self):
-    """Get visualization data"""
-    return {
-        'visited': set(),
-        'frontier': set(),
-        'path': []
-    }
+    
+    def _is_safe_in_state(self, pos, state):
+        """Check if position is safe in given state"""
+        x, y = pos
+        if not (0 <= x < self.game.grid_cols and 0 <= y < self.game.grid_rows):
+            return False
+        if pos in state['snake'][1:]:
+            return False
+        return True
+    
+    def get_visualization_data(self):
+        """Get visualization data"""
+        return {
+            'visited': set(),
+            'frontier': set(),
+            'path': []
+        }

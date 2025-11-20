@@ -4,7 +4,20 @@ Uses unweighted shortest path search
 """
 import logging
 from collections import deque
-from snake_game.utils import get_neighbors
+
+
+def get_neighbors(pos, grid_rows, grid_cols):
+    """Get valid neighboring positions"""
+    x, y = pos
+    neighbors = []
+    directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
+    
+    for dx, dy in directions:
+        new_pos = (x + dx, y + dy)
+        if 0 <= new_pos[0] < grid_cols and 0 <= new_pos[1] < grid_rows:
+            neighbors.append(new_pos)
+    
+    return neighbors
 
 
 class BFSAgent:

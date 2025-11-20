@@ -4,8 +4,32 @@ Implements pathfinding with visualization support
 """
 from collections import deque
 import heapq
-from snake_game.utils import get_neighbors
-from snake_game.heuristics import get_heuristic
+
+
+def get_neighbors(pos, grid_rows, grid_cols):
+    """
+    Get valid neighboring positions (up, down, left, right)
+    
+    Args:
+        pos: Tuple (x, y)
+        grid_rows: Number of rows
+        grid_cols: Number of columns
+        
+    Returns:
+        List of valid neighbor positions
+    """
+    x, y = pos
+    neighbors = []
+    
+    # Four directions: up, down, left, right
+    directions = [(0, -1), (0, 1), (-1, 0), (1, 0)]
+    
+    for dx, dy in directions:
+        new_pos = (x + dx, y + dy)
+        if 0 <= new_pos[0] < grid_cols and 0 <= new_pos[1] < grid_rows:
+            neighbors.append(new_pos)
+    
+    return neighbors
 
 
 class SearchResult:
@@ -91,12 +115,13 @@ def astar_search(start, goal, obstacles, grid_rows, grid_cols, heuristic_name='m
     Returns:
         SearchResult object containing path and search statistics
     """
-    heuristic = get_heuristic(heuristic_name)
+    def heuristic(pos):
+        """Manhattan distance heuristic"""
+        return abs(pos[0] - goal[0]) + abs(pos[1] - goal[1])
     
     # Priority queue: (f_score, counter, current, path, g_score)
-    # Counter ensures stable sorting for equal f_scores
     counter = 0
-    heap = [(heuristic(start, goal), counter, start, [start], 0)]
+    heap = [(heuristic(start), counter, start, [start], 0)]
     visited = set()
     frontier = {start}
     nodes_expanded = 0
@@ -137,7 +162,7 @@ def astar_search(start, goal, obstacles, grid_rows, grid_cols, heuristic_name='m
             # Only process if this is a better path
             if neighbor not in g_scores or new_g_score < g_scores[neighbor]:
                 g_scores[neighbor] = new_g_score
-                h_score = heuristic(neighbor, goal)
+                h_score = heuristic(neighbor)
                 new_f_score = new_g_score + h_score
                 new_path = path + [neighbor]
                 
