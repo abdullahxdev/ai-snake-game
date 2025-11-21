@@ -48,7 +48,7 @@ class GameRenderer:
         self.show_grid = config.get('visual', 'show_grid')
         self.show_eyes = config.get('visual', 'show_eyes')
         self.gradient_body = config.get('visual', 'gradient_body')
-    
+            
     def update_theme(self, theme_name):
         """Update renderer theme"""
         self.theme = get_theme(theme_name)
