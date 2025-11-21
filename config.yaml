@@ -1,64 +1,45 @@
-# Snake AI Game - Complete Configuration
-
-# Window settings
 window:
   width: 1280
   height: 720
-  title: "Snake AI Game"
-  grid_coverage: 0.8  # 80% of screen for gameplay area
-
-# Grid settings (auto-calculated based on window size and coverage)
+  title: Snake AI Game
+  grid_coverage: 0.8
 grid:
-  cell_size: 30  # Will be recalculated dynamically
-  rows: 20       # Will be recalculated dynamically
-  cols: 20       # Will be recalculated dynamically
-
-# Game settings
+  cell_size: 30
+  rows: 16
+  cols: 34
 game:
-  default_fps: 12
+  default_fps: 30
   min_fps: 5
   max_fps: 30
   initial_snake_length: 3
-
-# AI settings
 ai:
-  default_mode: "astar"  # "human", "astar", "bfs", "alphabeta"
-  heuristic: "manhattan"  # "manhattan" or "euclidean"
+  default_mode: alphabeta
+  heuristic: manhattan
   show_visualization: true
   dynamic_replanning: true
-  alphabeta_depth: 4  # Depth limit for alpha-beta search
-  survival_mode_threshold: 50  # Switch to survival mode at this score
-
-# Audio settings
+  alphabeta_depth: 4
+  survival_mode_threshold: 50
 audio:
   enabled: true
-  volume: 70  # 0-100
+  volume: 74
   sound_effects: true
   background_music: false
-
-# Visual settings
 visual:
-  default_theme: "neon"  # "neon", "pastel", "dark", "classic"
+  default_theme: neon
   show_grid: true
   show_eyes: true
   animate_background: true
   show_path_overlay: true
   gradient_body: true
-
-# Menu settings
 menu:
   animation_speed: 1.0
   ghost_snakes: 5
   parallax_layers: 3
-
-# Performance settings
 performance:
   headless_mode: false
   vsync: true
   benchmark_mode: false
-
-# Logging
 logging:
   enabled: true
-  log_dir: "logs"
-  level: "INFO"  # "DEBUG", "INFO", "WARNING", "ERROR"
+  log_dir: logs
+  level: INFO
