@@ -8,12 +8,12 @@ grid:
   rows: 16
   cols: 34
 game:
-  default_fps: 30
+  default_fps: 27
   min_fps: 5
   max_fps: 30
   initial_snake_length: 3
 ai:
-  default_mode: alphabeta
+  default_mode: bfs
   heuristic: manhattan
   show_visualization: true
   dynamic_replanning: true

@@ -306,3 +306,5 @@ snake-ai-project/
 ├── requirements.txt
 ├── config.yaml              # User settings
 └── README.md                # This file
+
+⭐ If you found this project helpful, please consider giving it a star! ⭐
