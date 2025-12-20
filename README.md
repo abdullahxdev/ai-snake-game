@@ -2,6 +2,14 @@
 
 **A fully-featured Snake game with 4 AI modes, animated menu system, themes, sound effects, and survival strategies for high scores.**
 
+<img width="1279" height="718" alt="Screenshot 2025-12-20 113050" src="https://github.com/user-attachments/assets/5051120b-852b-4af4-9e6b-91ce7a2d2147" />
+
+<img width="1273" height="714" alt="Screenshot 2025-12-20 113148" src="https://github.com/user-attachments/assets/aa67a347-70e7-47d5-914e-3f8cbb107bf2" />
+
+<img width="1277" height="717" alt="Screenshot 2025-12-20 113104" src="https://github.com/user-attachments/assets/7e8349e2-3e77-46ed-9ba9-f0c0aeb82e3a" />
+
+<img width="1278" height="716" alt="Screenshot 2025-12-20 113118" src="https://github.com/user-attachments/assets/924332b7-8349-4e31-a501-93ead00a336d" />
+
 ---
 
 ## 🎯 Key Updates & Bug Fixes
