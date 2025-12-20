@@ -283,6 +283,15 @@ Tested on 20x20 grid (auto-scales to your screen):
 
 ---
 
+## Author
+
+**Muhammad Abdullah**
+- GitHub: [@abdullahxdev](https://github.com/abdullahxdev)
+- LinkedIn: [Muhammad Abdullah](https://linkedin.com/in/mabdullahxdev)
+- Email: abdullahisdev@gmail.com
+
+---
+
 ## 🏗️ Project Structure
 ````
 snake-ai-project/
